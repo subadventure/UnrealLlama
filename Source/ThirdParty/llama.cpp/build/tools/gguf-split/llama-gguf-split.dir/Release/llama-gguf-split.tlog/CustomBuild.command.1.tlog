@@ -1,0 +1,10 @@
+^C:\USERS\GEDIM\DOCUMENTS\UNREAL PROJECTS\EXAMPLE\SOURCE\EXAMPLE\LLAMA.CPP\TOOLS\GGUF-SPLIT\CMAKELISTS.TXT
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" "-SC:/Users/gedim/Documents/Unreal Projects/Example/Source/Example/llama.cpp" "-BC:/Users/gedim/Documents/Unreal Projects/Example/Source/Example/llama.cpp/build" --check-stamp-file "C:/Users/gedim/Documents/Unreal Projects/Example/Source/Example/llama.cpp/build/tools/gguf-split/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

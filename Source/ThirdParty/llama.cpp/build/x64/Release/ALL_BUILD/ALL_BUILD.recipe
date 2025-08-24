@@ -1,0 +1,80 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project>
+  <ProjectOutputs>
+    <ProjectOutput>
+      <FullPath>C:\Users\gedim\Documents\Unreal Projects\Example\Source\Example\llama.cpp\build\x64\Release\ZERO_CHECK</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>C:\Users\gedim\Documents\Unreal Projects\Example\Source\Example\llama.cpp\build\bin\Release\ggml-base.dll</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>C:\Users\gedim\Documents\Unreal Projects\Example\Source\Example\llama.cpp\build\bin\Release\ggml-cpu.dll</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>C:\Users\gedim\Documents\Unreal Projects\Example\Source\Example\llama.cpp\build\bin\Release\ggml.dll</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>C:\Users\gedim\Documents\Unreal Projects\Example\Source\Example\llama.cpp\build\bin\Release\llama.dll</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>C:\Users\gedim\Documents\Unreal Projects\Example\Source\Example\llama.cpp\build\bin\Release\llama-batched-bench.exe</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>C:\Users\gedim\Documents\Unreal Projects\Example\Source\Example\llama.cpp\build\bin\Release\llama-bench.exe</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>C:\Users\gedim\Documents\Unreal Projects\Example\Source\Example\llama.cpp\build\bin\Release\llama-cli.exe</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>C:\Users\gedim\Documents\Unreal Projects\Example\Source\Example\llama.cpp\build\bin\Release\llama-cvector-generator.exe</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>C:\Users\gedim\Documents\Unreal Projects\Example\Source\Example\llama.cpp\build\bin\Release\llama-export-lora.exe</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>C:\Users\gedim\Documents\Unreal Projects\Example\Source\Example\llama.cpp\build\bin\Release\llama-gemma3-cli.exe</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>C:\Users\gedim\Documents\Unreal Projects\Example\Source\Example\llama.cpp\build\bin\Release\llama-gguf-split.exe</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>C:\Users\gedim\Documents\Unreal Projects\Example\Source\Example\llama.cpp\build\bin\Release\llama-imatrix.exe</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>C:\Users\gedim\Documents\Unreal Projects\Example\Source\Example\llama.cpp\build\bin\Release\llama-llava-cli.exe</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>C:\Users\gedim\Documents\Unreal Projects\Example\Source\Example\llama.cpp\build\bin\Release\llama-minicpmv-cli.exe</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>C:\Users\gedim\Documents\Unreal Projects\Example\Source\Example\llama.cpp\build\bin\Release\mtmd.dll</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>C:\Users\gedim\Documents\Unreal Projects\Example\Source\Example\llama.cpp\build\bin\Release\llama-mtmd-cli.exe</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>C:\Users\gedim\Documents\Unreal Projects\Example\Source\Example\llama.cpp\build\bin\Release\llama-perplexity.exe</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>C:\Users\gedim\Documents\Unreal Projects\Example\Source\Example\llama.cpp\build\bin\Release\llama-quantize.exe</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>C:\Users\gedim\Documents\Unreal Projects\Example\Source\Example\llama.cpp\build\bin\Release\llama-qwen2vl-cli.exe</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>C:\Users\gedim\Documents\Unreal Projects\Example\Source\Example\llama.cpp\build\bin\Release\llama-run.exe</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>C:\Users\gedim\Documents\Unreal Projects\Example\Source\Example\llama.cpp\build\bin\Release\llama-tokenize.exe</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>C:\Users\gedim\Documents\Unreal Projects\Example\Source\Example\llama.cpp\build\bin\Release\llama-tts.exe</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>C:\Users\gedim\Documents\Unreal Projects\Example\Source\Example\llama.cpp\build\x64\Release\ALL_BUILD</FullPath>
+    </ProjectOutput>
+  </ProjectOutputs>
+  <ContentFiles />
+  <SatelliteDlls />
+  <NonRecipeFileRefs />
+</Project>

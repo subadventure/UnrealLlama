@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\gedim\Documents\Unreal Projects\Example\Source\Example\llama.cpp\build\CMakeFiles\c4e6a3e7dd54abe78b5837dbe2b5558d\INSTALL_force.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{AADC89EC-A678-3CD0-8497-D44F87653EF5}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,11 @@
+# Build artifacts
+Binaries/
+DerivedDataCache/
+Intermediate/
+Saved/
+.vs/
+*.sln
+
+# OS junk
+.DS_Store
+Thumbs.db

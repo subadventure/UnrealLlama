@@ -1,0 +1,2469 @@
+
+---
+events:
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeDetermineSystem.cmake:212 (message)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      The system is: Windows - 10.0.26100 - AMD64
+  -
+    kind: "find-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeDetermineCompilerId.cmake:462 (find_file)"
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeDetermineCompilerId.cmake:500 (CMAKE_DETERMINE_COMPILER_ID_WRITE)"
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeDetermineCompilerId.cmake:8 (CMAKE_DETERMINE_COMPILER_ID_BUILD)"
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeDetermineCCompiler.cmake:122 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:2 (project)"
+    mode: "file"
+    variable: "src_in"
+    description: "Path to a file."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "CMakeCCompilerId.c.in"
+    candidate_directories:
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/"
+    found: "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeCCompilerId.c.in"
+    search_context:
+      ENV{PATH}:
+        - "C:\\WINDOWS\\system32"
+        - "C:\\WINDOWS"
+        - "C:\\WINDOWS\\System32\\Wbem"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\WINDOWS\\System32\\OpenSSH\\"
+        - "C:\\Program Files\\nodejs\\"
+        - "C:\\Users\\gedim\\PyCharmMiscProject\\.venv\\Scripts"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:\\Program Files\\NVIDIA Corporation\\NVIDIA App\\NvDLISR"
+        - "C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
+        - "C:\\Program Files\\dotnet\\"
+        - "C:\\Program Files\\CMake\\bin"
+        - "C:\\Users\\gedim\\AppData\\Local\\Programs\\Python\\Launcher\\"
+        - "C:\\Users\\gedim\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\Users\\gedim\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
+        - "C:\\Users\\gedim\\AppData\\Roaming\\npm"
+        - "C:\\Users\\gedim\\.dotnet\\tools"
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeDetermineCCompiler.cmake:122 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+      Compiler:  
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      0
+      MSBuild-Version 17.14.18+a338add32 f├╝r .NET Framework
+      Der Buildvorgang wurde am 19.08.2025 06:15:14 gestartet.
+      
+      Projekt "C:\\Users\\gedim\\Documents\\Unreal Projects\\Example\\Source\\Example\\llama.cpp\\build\\CMakeFiles\\4.1.0\\CompilerIdC\\CompilerIdC.vcxproj" auf Knoten "1" (Standardziele).
+      PrepareForBuild:
+        Das Verzeichnis "Debug\\" wird erstellt.
+        Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
+        Das Verzeichnis "Debug\\CompilerIdC.tlog\\" wird erstellt.
+      InitializeBuildStatus:
+        "Debug\\CompilerIdC.tlog\\unsuccessfulbuild" wird erstellt, da "AlwaysCreate" angegeben wurde.
+        Aktualisieren des Timestamps von "Debug\\CompilerIdC.tlog\\unsuccessfulbuild".
+      ClCompile:
+        C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\HostX64\\x64\\CL.exe /c /nologo /W0 /WX- /diagnostics:column /Od /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\\\" /Fd"Debug\\vc143.pdb" /external:W0 /Gd /TC /FC /errorReport:queue CMakeCCompilerId.c
+        CMakeCCompilerId.c
+      Link:
+        C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:".\\CompilerIdC.exe" /INCREMENTAL:NO /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /PDB:".\\CompilerIdC.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:".\\CompilerIdC.lib" /MACHINE:X64 Debug\\CMakeCCompilerId.obj
+        CompilerIdC.vcxproj -> C:\\Users\\gedim\\Documents\\Unreal Projects\\Example\\Source\\Example\\llama.cpp\\build\\CMakeFiles\\4.1.0\\CompilerIdC\\CompilerIdC.exe
+      PostBuildEvent:
+        for %%i in (cl.exe) do @echo CMAKE_C_COMPILER=%%~$PATH:i
+        :VCEnd
+        CMAKE_C_COMPILER=C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe
+      FinalizeBuildStatus:
+        Die Datei "Debug\\CompilerIdC.tlog\\unsuccessfulbuild" wird gel├Âscht.
+        Aktualisieren des Timestamps von "Debug\\CompilerIdC.tlog\\CompilerIdC.lastbuildstate".
+      Die Erstellung von Projekt "C:\\Users\\gedim\\Documents\\Unreal Projects\\Example\\Source\\Example\\llama.cpp\\build\\CMakeFiles\\4.1.0\\CompilerIdC\\CompilerIdC.vcxproj" ist abgeschlossen (Standardziele).
+      
+      Der Buildvorgang wurde erfolgreich ausgef├╝hrt.
+          0 Warnung(en)
+          0 Fehler
+      
+      Verstrichene Zeit 00:00:01.99
+      
+      
+      Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CompilerIdC.exe"
+      
+      Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CompilerIdC.vcxproj"
+      
+      The C compiler identification is MSVC, found in:
+        C:/Users/gedim/Documents/Unreal Projects/Example/Source/Example/llama.cpp/build/CMakeFiles/4.1.0/CompilerIdC/CompilerIdC.exe
+      
+  -
+    kind: "find-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeFindBinUtils.cmake:37 (find_program)"
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeFindBinUtils.cmake:65 (__resolve_tool_path)"
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeFindBinUtils.cmake:103 (__resolve_linker_path)"
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
+      - "CMakeLists.txt:2 (project)"
+    mode: "program"
+    variable: "_CMAKE_TOOL_WITH_PATH"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "link"
+    candidate_directories:
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.38.33130/bin/Hostx64/x64/"
+      - "C:/Windows/System32/"
+      - "C:/Windows/"
+      - "C:/Windows/System32/wbem/"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/"
+      - "C:/Windows/System32/OpenSSH/"
+      - "C:/Program Files/nodejs/"
+      - "C:/Users/gedim/PyCharmMiscProject/.venv/Scripts/"
+      - "C:/Program Files/Git/cmd/"
+      - "C:/Program Files/NVIDIA Corporation/NVIDIA App/NvDLISR/"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/"
+      - "C:/Program Files/dotnet/"
+      - "C:/Program Files/CMake/bin/"
+      - "C:/Users/gedim/AppData/Local/Programs/Python/Launcher/"
+      - "C:/Users/gedim/AppData/Local/Microsoft/WindowsApps/"
+      - "C:/Users/gedim/AppData/Local/Programs/Microsoft VS Code/bin/"
+      - "C:/Users/gedim/AppData/Roaming/npm/"
+      - "C:/Users/gedim/.dotnet/tools/"
+    searched_directories:
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.38.33130/bin/Hostx64/x64/link.com"
+    found: "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.38.33130/bin/Hostx64/x64/link.exe"
+    search_context:
+      ENV{PATH}:
+        - "C:\\WINDOWS\\system32"
+        - "C:\\WINDOWS"
+        - "C:\\WINDOWS\\System32\\Wbem"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\WINDOWS\\System32\\OpenSSH\\"
+        - "C:\\Program Files\\nodejs\\"
+        - "C:\\Users\\gedim\\PyCharmMiscProject\\.venv\\Scripts"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:\\Program Files\\NVIDIA Corporation\\NVIDIA App\\NvDLISR"
+        - "C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
+        - "C:\\Program Files\\dotnet\\"
+        - "C:\\Program Files\\CMake\\bin"
+        - "C:\\Users\\gedim\\AppData\\Local\\Programs\\Python\\Launcher\\"
+        - "C:\\Users\\gedim\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\Users\\gedim\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
+        - "C:\\Users\\gedim\\AppData\\Roaming\\npm"
+        - "C:\\Users\\gedim\\.dotnet\\tools"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeFindBinUtils.cmake:37 (find_program)"
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeFindBinUtils.cmake:65 (__resolve_tool_path)"
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeFindBinUtils.cmake:104 (__resolve_linker_path)"
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
+      - "CMakeLists.txt:2 (project)"
+    mode: "program"
+    variable: "_CMAKE_TOOL_WITH_PATH"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "lld-link"
+    candidate_directories:
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.38.33130/bin/Hostx64/x64/"
+      - "C:/Windows/System32/"
+      - "C:/Windows/"
+      - "C:/Windows/System32/wbem/"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/"
+      - "C:/Windows/System32/OpenSSH/"
+      - "C:/Program Files/nodejs/"
+      - "C:/Users/gedim/PyCharmMiscProject/.venv/Scripts/"
+      - "C:/Program Files/Git/cmd/"
+      - "C:/Program Files/NVIDIA Corporation/NVIDIA App/NvDLISR/"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/"
+      - "C:/Program Files/dotnet/"
+      - "C:/Program Files/CMake/bin/"
+      - "C:/Users/gedim/AppData/Local/Programs/Python/Launcher/"
+      - "C:/Users/gedim/AppData/Local/Microsoft/WindowsApps/"
+      - "C:/Users/gedim/AppData/Local/Programs/Microsoft VS Code/bin/"
+      - "C:/Users/gedim/AppData/Roaming/npm/"
+      - "C:/Users/gedim/.dotnet/tools/"
+    searched_directories:
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.38.33130/bin/Hostx64/x64/lld-link.com"
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.38.33130/bin/Hostx64/x64/lld-link.exe"
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.38.33130/bin/Hostx64/x64/lld-link"
+      - "C:/Windows/System32/lld-link.com"
+      - "C:/Windows/System32/lld-link.exe"
+      - "C:/Windows/System32/lld-link"
+      - "C:/Windows/lld-link.com"
+      - "C:/Windows/lld-link.exe"
+      - "C:/Windows/lld-link"
+      - "C:/Windows/System32/wbem/lld-link.com"
+      - "C:/Windows/System32/wbem/lld-link.exe"
+      - "C:/Windows/System32/wbem/lld-link"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/lld-link.com"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/lld-link.exe"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/lld-link"
+      - "C:/Windows/System32/OpenSSH/lld-link.com"
+      - "C:/Windows/System32/OpenSSH/lld-link.exe"
+      - "C:/Windows/System32/OpenSSH/lld-link"
+      - "C:/Program Files/nodejs/lld-link.com"
+      - "C:/Program Files/nodejs/lld-link.exe"
+      - "C:/Program Files/nodejs/lld-link"
+      - "C:/Users/gedim/PyCharmMiscProject/.venv/Scripts/lld-link.com"
+      - "C:/Users/gedim/PyCharmMiscProject/.venv/Scripts/lld-link.exe"
+      - "C:/Users/gedim/PyCharmMiscProject/.venv/Scripts/lld-link"
+      - "C:/Program Files/Git/cmd/lld-link.com"
+      - "C:/Program Files/Git/cmd/lld-link.exe"
+      - "C:/Program Files/Git/cmd/lld-link"
+      - "C:/Program Files/NVIDIA Corporation/NVIDIA App/NvDLISR/lld-link.com"
+      - "C:/Program Files/NVIDIA Corporation/NVIDIA App/NvDLISR/lld-link.exe"
+      - "C:/Program Files/NVIDIA Corporation/NVIDIA App/NvDLISR/lld-link"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/lld-link.com"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/lld-link.exe"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/lld-link"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/lld-link.com"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/lld-link.exe"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/lld-link"
+      - "C:/Program Files/dotnet/lld-link.com"
+      - "C:/Program Files/dotnet/lld-link.exe"
+      - "C:/Program Files/dotnet/lld-link"
+      - "C:/Program Files/CMake/bin/lld-link.com"
+      - "C:/Program Files/CMake/bin/lld-link.exe"
+      - "C:/Program Files/CMake/bin/lld-link"
+      - "C:/Users/gedim/AppData/Local/Programs/Python/Launcher/lld-link.com"
+      - "C:/Users/gedim/AppData/Local/Programs/Python/Launcher/lld-link.exe"
+      - "C:/Users/gedim/AppData/Local/Programs/Python/Launcher/lld-link"
+      - "C:/Users/gedim/AppData/Local/Microsoft/WindowsApps/lld-link.com"
+      - "C:/Users/gedim/AppData/Local/Microsoft/WindowsApps/lld-link.exe"
+      - "C:/Users/gedim/AppData/Local/Microsoft/WindowsApps/lld-link"
+      - "C:/Users/gedim/AppData/Local/Programs/Microsoft VS Code/bin/lld-link.com"
+      - "C:/Users/gedim/AppData/Local/Programs/Microsoft VS Code/bin/lld-link.exe"
+      - "C:/Users/gedim/AppData/Local/Programs/Microsoft VS Code/bin/lld-link"
+      - "C:/Users/gedim/AppData/Roaming/npm/lld-link.com"
+      - "C:/Users/gedim/AppData/Roaming/npm/lld-link.exe"
+      - "C:/Users/gedim/AppData/Roaming/npm/lld-link"
+      - "C:/Users/gedim/.dotnet/tools/lld-link.com"
+      - "C:/Users/gedim/.dotnet/tools/lld-link.exe"
+      - "C:/Users/gedim/.dotnet/tools/lld-link"
+    found: false
+    search_context:
+      ENV{PATH}:
+        - "C:\\WINDOWS\\system32"
+        - "C:\\WINDOWS"
+        - "C:\\WINDOWS\\System32\\Wbem"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\WINDOWS\\System32\\OpenSSH\\"
+        - "C:\\Program Files\\nodejs\\"
+        - "C:\\Users\\gedim\\PyCharmMiscProject\\.venv\\Scripts"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:\\Program Files\\NVIDIA Corporation\\NVIDIA App\\NvDLISR"
+        - "C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
+        - "C:\\Program Files\\dotnet\\"
+        - "C:\\Program Files\\CMake\\bin"
+        - "C:\\Users\\gedim\\AppData\\Local\\Programs\\Python\\Launcher\\"
+        - "C:\\Users\\gedim\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\Users\\gedim\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
+        - "C:\\Users\\gedim\\AppData\\Roaming\\npm"
+        - "C:\\Users\\gedim\\.dotnet\\tools"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeFindBinUtils.cmake:238 (find_program)"
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
+      - "CMakeLists.txt:2 (project)"
+    mode: "program"
+    variable: "CMAKE_LINKER"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "link"
+    candidate_directories:
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.38.33130/bin/Hostx64/x64/"
+      - "C:/Windows/System32/"
+      - "C:/Windows/"
+      - "C:/Windows/System32/wbem/"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/"
+      - "C:/Windows/System32/OpenSSH/"
+      - "C:/Program Files/nodejs/"
+      - "C:/Users/gedim/PyCharmMiscProject/.venv/Scripts/"
+      - "C:/Program Files/Git/cmd/"
+      - "C:/Program Files/NVIDIA Corporation/NVIDIA App/NvDLISR/"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/"
+      - "C:/Program Files/dotnet/"
+      - "C:/Program Files/CMake/bin/"
+      - "C:/Users/gedim/AppData/Local/Programs/Python/Launcher/"
+      - "C:/Users/gedim/AppData/Local/Microsoft/WindowsApps/"
+      - "C:/Users/gedim/AppData/Local/Programs/Microsoft VS Code/bin/"
+      - "C:/Users/gedim/AppData/Roaming/npm/"
+      - "C:/Users/gedim/.dotnet/tools/"
+    searched_directories:
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.38.33130/bin/Hostx64/x64/link.com"
+    found: "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.38.33130/bin/Hostx64/x64/link.exe"
+    search_context:
+      ENV{PATH}:
+        - "C:\\WINDOWS\\system32"
+        - "C:\\WINDOWS"
+        - "C:\\WINDOWS\\System32\\Wbem"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\WINDOWS\\System32\\OpenSSH\\"
+        - "C:\\Program Files\\nodejs\\"
+        - "C:\\Users\\gedim\\PyCharmMiscProject\\.venv\\Scripts"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:\\Program Files\\NVIDIA Corporation\\NVIDIA App\\NvDLISR"
+        - "C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
+        - "C:\\Program Files\\dotnet\\"
+        - "C:\\Program Files\\CMake\\bin"
+        - "C:\\Users\\gedim\\AppData\\Local\\Programs\\Python\\Launcher\\"
+        - "C:\\Users\\gedim\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\Users\\gedim\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
+        - "C:\\Users\\gedim\\AppData\\Roaming\\npm"
+        - "C:\\Users\\gedim\\.dotnet\\tools"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeFindBinUtils.cmake:238 (find_program)"
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
+      - "CMakeLists.txt:2 (project)"
+    mode: "program"
+    variable: "CMAKE_MT"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "mt"
+    candidate_directories:
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.38.33130/bin/Hostx64/x64/"
+      - "C:/Windows/System32/"
+      - "C:/Windows/"
+      - "C:/Windows/System32/wbem/"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/"
+      - "C:/Windows/System32/OpenSSH/"
+      - "C:/Program Files/nodejs/"
+      - "C:/Users/gedim/PyCharmMiscProject/.venv/Scripts/"
+      - "C:/Program Files/Git/cmd/"
+      - "C:/Program Files/NVIDIA Corporation/NVIDIA App/NvDLISR/"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/"
+      - "C:/Program Files/dotnet/"
+      - "C:/Program Files/CMake/bin/"
+      - "C:/Users/gedim/AppData/Local/Programs/Python/Launcher/"
+      - "C:/Users/gedim/AppData/Local/Microsoft/WindowsApps/"
+      - "C:/Users/gedim/AppData/Local/Programs/Microsoft VS Code/bin/"
+      - "C:/Users/gedim/AppData/Roaming/npm/"
+      - "C:/Users/gedim/.dotnet/tools/"
+    searched_directories:
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.38.33130/bin/Hostx64/x64/mt.com"
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.38.33130/bin/Hostx64/x64/mt.exe"
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.38.33130/bin/Hostx64/x64/mt"
+      - "C:/Windows/System32/mt.com"
+      - "C:/Windows/System32/mt.exe"
+      - "C:/Windows/System32/mt"
+      - "C:/Windows/mt.com"
+      - "C:/Windows/mt.exe"
+      - "C:/Windows/mt"
+      - "C:/Windows/System32/wbem/mt.com"
+      - "C:/Windows/System32/wbem/mt.exe"
+      - "C:/Windows/System32/wbem/mt"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/mt.com"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/mt.exe"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/mt"
+      - "C:/Windows/System32/OpenSSH/mt.com"
+      - "C:/Windows/System32/OpenSSH/mt.exe"
+      - "C:/Windows/System32/OpenSSH/mt"
+      - "C:/Program Files/nodejs/mt.com"
+      - "C:/Program Files/nodejs/mt.exe"
+      - "C:/Program Files/nodejs/mt"
+      - "C:/Users/gedim/PyCharmMiscProject/.venv/Scripts/mt.com"
+      - "C:/Users/gedim/PyCharmMiscProject/.venv/Scripts/mt.exe"
+      - "C:/Users/gedim/PyCharmMiscProject/.venv/Scripts/mt"
+      - "C:/Program Files/Git/cmd/mt.com"
+      - "C:/Program Files/Git/cmd/mt.exe"
+      - "C:/Program Files/Git/cmd/mt"
+      - "C:/Program Files/NVIDIA Corporation/NVIDIA App/NvDLISR/mt.com"
+      - "C:/Program Files/NVIDIA Corporation/NVIDIA App/NvDLISR/mt.exe"
+      - "C:/Program Files/NVIDIA Corporation/NVIDIA App/NvDLISR/mt"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/mt.com"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/mt.exe"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/mt"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/mt.com"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/mt.exe"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/mt"
+      - "C:/Program Files/dotnet/mt.com"
+      - "C:/Program Files/dotnet/mt.exe"
+      - "C:/Program Files/dotnet/mt"
+      - "C:/Program Files/CMake/bin/mt.com"
+      - "C:/Program Files/CMake/bin/mt.exe"
+      - "C:/Program Files/CMake/bin/mt"
+      - "C:/Users/gedim/AppData/Local/Programs/Python/Launcher/mt.com"
+      - "C:/Users/gedim/AppData/Local/Programs/Python/Launcher/mt.exe"
+      - "C:/Users/gedim/AppData/Local/Programs/Python/Launcher/mt"
+      - "C:/Users/gedim/AppData/Local/Microsoft/WindowsApps/mt.com"
+      - "C:/Users/gedim/AppData/Local/Microsoft/WindowsApps/mt.exe"
+      - "C:/Users/gedim/AppData/Local/Microsoft/WindowsApps/mt"
+      - "C:/Users/gedim/AppData/Local/Programs/Microsoft VS Code/bin/mt.com"
+      - "C:/Users/gedim/AppData/Local/Programs/Microsoft VS Code/bin/mt.exe"
+      - "C:/Users/gedim/AppData/Local/Programs/Microsoft VS Code/bin/mt"
+      - "C:/Users/gedim/AppData/Roaming/npm/mt.com"
+      - "C:/Users/gedim/AppData/Roaming/npm/mt.exe"
+      - "C:/Users/gedim/AppData/Roaming/npm/mt"
+      - "C:/Users/gedim/.dotnet/tools/mt.com"
+      - "C:/Users/gedim/.dotnet/tools/mt.exe"
+      - "C:/Users/gedim/.dotnet/tools/mt"
+    found: false
+    search_context:
+      ENV{PATH}:
+        - "C:\\WINDOWS\\system32"
+        - "C:\\WINDOWS"
+        - "C:\\WINDOWS\\System32\\Wbem"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\WINDOWS\\System32\\OpenSSH\\"
+        - "C:\\Program Files\\nodejs\\"
+        - "C:\\Users\\gedim\\PyCharmMiscProject\\.venv\\Scripts"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:\\Program Files\\NVIDIA Corporation\\NVIDIA App\\NvDLISR"
+        - "C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
+        - "C:\\Program Files\\dotnet\\"
+        - "C:\\Program Files\\CMake\\bin"
+        - "C:\\Users\\gedim\\AppData\\Local\\Programs\\Python\\Launcher\\"
+        - "C:\\Users\\gedim\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\Users\\gedim\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
+        - "C:\\Users\\gedim\\AppData\\Roaming\\npm"
+        - "C:\\Users\\gedim\\.dotnet\\tools"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeFindBinUtils.cmake:238 (find_program)"
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
+      - "CMakeLists.txt:2 (project)"
+    mode: "program"
+    variable: "CMAKE_AR"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "lib"
+    candidate_directories:
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.38.33130/bin/Hostx64/x64/"
+      - "C:/Windows/System32/"
+      - "C:/Windows/"
+      - "C:/Windows/System32/wbem/"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/"
+      - "C:/Windows/System32/OpenSSH/"
+      - "C:/Program Files/nodejs/"
+      - "C:/Users/gedim/PyCharmMiscProject/.venv/Scripts/"
+      - "C:/Program Files/Git/cmd/"
+      - "C:/Program Files/NVIDIA Corporation/NVIDIA App/NvDLISR/"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/"
+      - "C:/Program Files/dotnet/"
+      - "C:/Program Files/CMake/bin/"
+      - "C:/Users/gedim/AppData/Local/Programs/Python/Launcher/"
+      - "C:/Users/gedim/AppData/Local/Microsoft/WindowsApps/"
+      - "C:/Users/gedim/AppData/Local/Programs/Microsoft VS Code/bin/"
+      - "C:/Users/gedim/AppData/Roaming/npm/"
+      - "C:/Users/gedim/.dotnet/tools/"
+    searched_directories:
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.38.33130/bin/Hostx64/x64/lib.com"
+    found: "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.38.33130/bin/Hostx64/x64/lib.exe"
+    search_context:
+      ENV{PATH}:
+        - "C:\\WINDOWS\\system32"
+        - "C:\\WINDOWS"
+        - "C:\\WINDOWS\\System32\\Wbem"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\WINDOWS\\System32\\OpenSSH\\"
+        - "C:\\Program Files\\nodejs\\"
+        - "C:\\Users\\gedim\\PyCharmMiscProject\\.venv\\Scripts"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:\\Program Files\\NVIDIA Corporation\\NVIDIA App\\NvDLISR"
+        - "C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
+        - "C:\\Program Files\\dotnet\\"
+        - "C:\\Program Files\\CMake\\bin"
+        - "C:\\Users\\gedim\\AppData\\Local\\Programs\\Python\\Launcher\\"
+        - "C:\\Users\\gedim\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\Users\\gedim\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
+        - "C:\\Users\\gedim\\AppData\\Roaming\\npm"
+        - "C:\\Users\\gedim\\.dotnet\\tools"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeDetermineCompilerId.cmake:462 (find_file)"
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeDetermineCompilerId.cmake:500 (CMAKE_DETERMINE_COMPILER_ID_WRITE)"
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeDetermineCompilerId.cmake:8 (CMAKE_DETERMINE_COMPILER_ID_BUILD)"
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeDetermineCXXCompiler.cmake:125 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:2 (project)"
+    mode: "file"
+    variable: "src_in"
+    description: "Path to a file."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "CMakeCXXCompilerId.cpp.in"
+    candidate_directories:
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/"
+    found: "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeCXXCompilerId.cpp.in"
+    search_context:
+      ENV{PATH}:
+        - "C:\\WINDOWS\\system32"
+        - "C:\\WINDOWS"
+        - "C:\\WINDOWS\\System32\\Wbem"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\WINDOWS\\System32\\OpenSSH\\"
+        - "C:\\Program Files\\nodejs\\"
+        - "C:\\Users\\gedim\\PyCharmMiscProject\\.venv\\Scripts"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:\\Program Files\\NVIDIA Corporation\\NVIDIA App\\NvDLISR"
+        - "C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
+        - "C:\\Program Files\\dotnet\\"
+        - "C:\\Program Files\\CMake\\bin"
+        - "C:\\Users\\gedim\\AppData\\Local\\Programs\\Python\\Launcher\\"
+        - "C:\\Users\\gedim\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\Users\\gedim\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
+        - "C:\\Users\\gedim\\AppData\\Roaming\\npm"
+        - "C:\\Users\\gedim\\.dotnet\\tools"
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeDetermineCXXCompiler.cmake:125 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+      Compiler:  
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      0
+      MSBuild-Version 17.14.18+a338add32 f├╝r .NET Framework
+      Der Buildvorgang wurde am 19.08.2025 06:15:17 gestartet.
+      
+      Projekt "C:\\Users\\gedim\\Documents\\Unreal Projects\\Example\\Source\\Example\\llama.cpp\\build\\CMakeFiles\\4.1.0\\CompilerIdCXX\\CompilerIdCXX.vcxproj" auf Knoten "1" (Standardziele).
+      PrepareForBuild:
+        Das Verzeichnis "Debug\\" wird erstellt.
+        Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
+        Das Verzeichnis "Debug\\CompilerIdCXX.tlog\\" wird erstellt.
+      InitializeBuildStatus:
+        "Debug\\CompilerIdCXX.tlog\\unsuccessfulbuild" wird erstellt, da "AlwaysCreate" angegeben wurde.
+        Aktualisieren des Timestamps von "Debug\\CompilerIdCXX.tlog\\unsuccessfulbuild".
+      ClCompile:
+        C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\HostX64\\x64\\CL.exe /c /nologo /W0 /WX- /diagnostics:column /Od /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\\\" /Fd"Debug\\vc143.pdb" /external:W0 /Gd /TP /FC /errorReport:queue CMakeCXXCompilerId.cpp
+        CMakeCXXCompilerId.cpp
+      Link:
+        C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:".\\CompilerIdCXX.exe" /INCREMENTAL:NO /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /PDB:".\\CompilerIdCXX.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:".\\CompilerIdCXX.lib" /MACHINE:X64 Debug\\CMakeCXXCompilerId.obj
+        CompilerIdCXX.vcxproj -> C:\\Users\\gedim\\Documents\\Unreal Projects\\Example\\Source\\Example\\llama.cpp\\build\\CMakeFiles\\4.1.0\\CompilerIdCXX\\CompilerIdCXX.exe
+      PostBuildEvent:
+        for %%i in (cl.exe) do @echo CMAKE_CXX_COMPILER=%%~$PATH:i
+        :VCEnd
+        CMAKE_CXX_COMPILER=C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe
+      FinalizeBuildStatus:
+        Die Datei "Debug\\CompilerIdCXX.tlog\\unsuccessfulbuild" wird gel├Âscht.
+        Aktualisieren des Timestamps von "Debug\\CompilerIdCXX.tlog\\CompilerIdCXX.lastbuildstate".
+      Die Erstellung von Projekt "C:\\Users\\gedim\\Documents\\Unreal Projects\\Example\\Source\\Example\\llama.cpp\\build\\CMakeFiles\\4.1.0\\CompilerIdCXX\\CompilerIdCXX.vcxproj" ist abgeschlossen (Standardziele).
+      
+      Der Buildvorgang wurde erfolgreich ausgef├╝hrt.
+          0 Warnung(en)
+          0 Fehler
+      
+      Verstrichene Zeit 00:00:01.75
+      
+      
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CompilerIdCXX.exe"
+      
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CompilerIdCXX.vcxproj"
+      
+      The CXX compiler identification is MSVC, found in:
+        C:/Users/gedim/Documents/Unreal Projects/Example/Source/Example/llama.cpp/build/CMakeFiles/4.1.0/CompilerIdCXX/CompilerIdCXX.exe
+      
+  -
+    kind: "find-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeFindBinUtils.cmake:37 (find_program)"
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeFindBinUtils.cmake:65 (__resolve_tool_path)"
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeFindBinUtils.cmake:104 (__resolve_linker_path)"
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeDetermineCXXCompiler.cmake:206 (include)"
+      - "CMakeLists.txt:2 (project)"
+    mode: "program"
+    variable: "_CMAKE_TOOL_WITH_PATH"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "lld-link"
+    candidate_directories:
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.38.33130/bin/Hostx64/x64/"
+      - "C:/Windows/System32/"
+      - "C:/Windows/"
+      - "C:/Windows/System32/wbem/"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/"
+      - "C:/Windows/System32/OpenSSH/"
+      - "C:/Program Files/nodejs/"
+      - "C:/Users/gedim/PyCharmMiscProject/.venv/Scripts/"
+      - "C:/Program Files/Git/cmd/"
+      - "C:/Program Files/NVIDIA Corporation/NVIDIA App/NvDLISR/"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/"
+      - "C:/Program Files/dotnet/"
+      - "C:/Program Files/CMake/bin/"
+      - "C:/Users/gedim/AppData/Local/Programs/Python/Launcher/"
+      - "C:/Users/gedim/AppData/Local/Microsoft/WindowsApps/"
+      - "C:/Users/gedim/AppData/Local/Programs/Microsoft VS Code/bin/"
+      - "C:/Users/gedim/AppData/Roaming/npm/"
+      - "C:/Users/gedim/.dotnet/tools/"
+    searched_directories:
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.38.33130/bin/Hostx64/x64/lld-link.com"
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.38.33130/bin/Hostx64/x64/lld-link.exe"
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.38.33130/bin/Hostx64/x64/lld-link"
+      - "C:/Windows/System32/lld-link.com"
+      - "C:/Windows/System32/lld-link.exe"
+      - "C:/Windows/System32/lld-link"
+      - "C:/Windows/lld-link.com"
+      - "C:/Windows/lld-link.exe"
+      - "C:/Windows/lld-link"
+      - "C:/Windows/System32/wbem/lld-link.com"
+      - "C:/Windows/System32/wbem/lld-link.exe"
+      - "C:/Windows/System32/wbem/lld-link"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/lld-link.com"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/lld-link.exe"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/lld-link"
+      - "C:/Windows/System32/OpenSSH/lld-link.com"
+      - "C:/Windows/System32/OpenSSH/lld-link.exe"
+      - "C:/Windows/System32/OpenSSH/lld-link"
+      - "C:/Program Files/nodejs/lld-link.com"
+      - "C:/Program Files/nodejs/lld-link.exe"
+      - "C:/Program Files/nodejs/lld-link"
+      - "C:/Users/gedim/PyCharmMiscProject/.venv/Scripts/lld-link.com"
+      - "C:/Users/gedim/PyCharmMiscProject/.venv/Scripts/lld-link.exe"
+      - "C:/Users/gedim/PyCharmMiscProject/.venv/Scripts/lld-link"
+      - "C:/Program Files/Git/cmd/lld-link.com"
+      - "C:/Program Files/Git/cmd/lld-link.exe"
+      - "C:/Program Files/Git/cmd/lld-link"
+      - "C:/Program Files/NVIDIA Corporation/NVIDIA App/NvDLISR/lld-link.com"
+      - "C:/Program Files/NVIDIA Corporation/NVIDIA App/NvDLISR/lld-link.exe"
+      - "C:/Program Files/NVIDIA Corporation/NVIDIA App/NvDLISR/lld-link"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/lld-link.com"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/lld-link.exe"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/lld-link"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/lld-link.com"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/lld-link.exe"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/lld-link"
+      - "C:/Program Files/dotnet/lld-link.com"
+      - "C:/Program Files/dotnet/lld-link.exe"
+      - "C:/Program Files/dotnet/lld-link"
+      - "C:/Program Files/CMake/bin/lld-link.com"
+      - "C:/Program Files/CMake/bin/lld-link.exe"
+      - "C:/Program Files/CMake/bin/lld-link"
+      - "C:/Users/gedim/AppData/Local/Programs/Python/Launcher/lld-link.com"
+      - "C:/Users/gedim/AppData/Local/Programs/Python/Launcher/lld-link.exe"
+      - "C:/Users/gedim/AppData/Local/Programs/Python/Launcher/lld-link"
+      - "C:/Users/gedim/AppData/Local/Microsoft/WindowsApps/lld-link.com"
+      - "C:/Users/gedim/AppData/Local/Microsoft/WindowsApps/lld-link.exe"
+      - "C:/Users/gedim/AppData/Local/Microsoft/WindowsApps/lld-link"
+      - "C:/Users/gedim/AppData/Local/Programs/Microsoft VS Code/bin/lld-link.com"
+      - "C:/Users/gedim/AppData/Local/Programs/Microsoft VS Code/bin/lld-link.exe"
+      - "C:/Users/gedim/AppData/Local/Programs/Microsoft VS Code/bin/lld-link"
+      - "C:/Users/gedim/AppData/Roaming/npm/lld-link.com"
+      - "C:/Users/gedim/AppData/Roaming/npm/lld-link.exe"
+      - "C:/Users/gedim/AppData/Roaming/npm/lld-link"
+      - "C:/Users/gedim/.dotnet/tools/lld-link.com"
+      - "C:/Users/gedim/.dotnet/tools/lld-link.exe"
+      - "C:/Users/gedim/.dotnet/tools/lld-link"
+    found: false
+    search_context:
+      ENV{PATH}:
+        - "C:\\WINDOWS\\system32"
+        - "C:\\WINDOWS"
+        - "C:\\WINDOWS\\System32\\Wbem"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\WINDOWS\\System32\\OpenSSH\\"
+        - "C:\\Program Files\\nodejs\\"
+        - "C:\\Users\\gedim\\PyCharmMiscProject\\.venv\\Scripts"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:\\Program Files\\NVIDIA Corporation\\NVIDIA App\\NvDLISR"
+        - "C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
+        - "C:\\Program Files\\dotnet\\"
+        - "C:\\Program Files\\CMake\\bin"
+        - "C:\\Users\\gedim\\AppData\\Local\\Programs\\Python\\Launcher\\"
+        - "C:\\Users\\gedim\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\Users\\gedim\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
+        - "C:\\Users\\gedim\\AppData\\Roaming\\npm"
+        - "C:\\Users\\gedim\\.dotnet\\tools"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeDetermineRCCompiler.cmake:40 (find_program)"
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/Platform/Windows-MSVC.cmake:574 (enable_language)"
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/Platform/Windows-MSVC.cmake:547 (__windows_compiler_msvc_enable_rc)"
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/Platform/Windows-MSVC-C.cmake:5 (__windows_compiler_msvc)"
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeCInformation.cmake:48 (include)"
+      - "CMakeLists.txt:2 (project)"
+    mode: "program"
+    variable: "CMAKE_RC_COMPILER"
+    description: "RC compiler"
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "rc"
+    candidate_directories:
+      - "C:/Windows/System32/"
+      - "C:/Windows/"
+      - "C:/Windows/System32/wbem/"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/"
+      - "C:/Windows/System32/OpenSSH/"
+      - "C:/Program Files/nodejs/"
+      - "C:/Users/gedim/PyCharmMiscProject/.venv/Scripts/"
+      - "C:/Program Files/Git/cmd/"
+      - "C:/Program Files/NVIDIA Corporation/NVIDIA App/NvDLISR/"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/"
+      - "C:/Program Files/dotnet/"
+      - "C:/Program Files/CMake/bin/"
+      - "C:/Users/gedim/AppData/Local/Programs/Python/Launcher/"
+      - "C:/Users/gedim/AppData/Local/Microsoft/WindowsApps/"
+      - "C:/Users/gedim/AppData/Local/Programs/Microsoft VS Code/bin/"
+      - "C:/Users/gedim/AppData/Roaming/npm/"
+      - "C:/Users/gedim/.dotnet/tools/"
+      - "C:/Program Files/bin/"
+      - "C:/Program Files/sbin/"
+      - "C:/Program Files/"
+      - "C:/Program Files (x86)/bin/"
+      - "C:/Program Files (x86)/sbin/"
+      - "C:/Program Files (x86)/"
+      - "C:/Program Files/CMake/bin/"
+      - "C:/Program Files/CMake/sbin/"
+      - "C:/Program Files/CMake/"
+      - "C:/Program Files (x86)/llama.cpp/bin/"
+      - "C:/Program Files (x86)/llama.cpp/sbin/"
+      - "C:/Program Files (x86)/llama.cpp/"
+    searched_directories:
+      - "C:/Windows/System32/rc.com"
+      - "C:/Windows/System32/rc.exe"
+      - "C:/Windows/System32/rc"
+      - "C:/Windows/rc.com"
+      - "C:/Windows/rc.exe"
+      - "C:/Windows/rc"
+      - "C:/Windows/System32/wbem/rc.com"
+      - "C:/Windows/System32/wbem/rc.exe"
+      - "C:/Windows/System32/wbem/rc"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/rc.com"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/rc.exe"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/rc"
+      - "C:/Windows/System32/OpenSSH/rc.com"
+      - "C:/Windows/System32/OpenSSH/rc.exe"
+      - "C:/Windows/System32/OpenSSH/rc"
+      - "C:/Program Files/nodejs/rc.com"
+      - "C:/Program Files/nodejs/rc.exe"
+      - "C:/Program Files/nodejs/rc"
+      - "C:/Users/gedim/PyCharmMiscProject/.venv/Scripts/rc.com"
+      - "C:/Users/gedim/PyCharmMiscProject/.venv/Scripts/rc.exe"
+      - "C:/Users/gedim/PyCharmMiscProject/.venv/Scripts/rc"
+      - "C:/Program Files/Git/cmd/rc.com"
+      - "C:/Program Files/Git/cmd/rc.exe"
+      - "C:/Program Files/Git/cmd/rc"
+      - "C:/Program Files/NVIDIA Corporation/NVIDIA App/NvDLISR/rc.com"
+      - "C:/Program Files/NVIDIA Corporation/NVIDIA App/NvDLISR/rc.exe"
+      - "C:/Program Files/NVIDIA Corporation/NVIDIA App/NvDLISR/rc"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/rc.com"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/rc.exe"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/rc"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/rc.com"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/rc.exe"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/rc"
+      - "C:/Program Files/dotnet/rc.com"
+      - "C:/Program Files/dotnet/rc.exe"
+      - "C:/Program Files/dotnet/rc"
+      - "C:/Program Files/CMake/bin/rc.com"
+      - "C:/Program Files/CMake/bin/rc.exe"
+      - "C:/Program Files/CMake/bin/rc"
+      - "C:/Users/gedim/AppData/Local/Programs/Python/Launcher/rc.com"
+      - "C:/Users/gedim/AppData/Local/Programs/Python/Launcher/rc.exe"
+      - "C:/Users/gedim/AppData/Local/Programs/Python/Launcher/rc"
+      - "C:/Users/gedim/AppData/Local/Microsoft/WindowsApps/rc.com"
+      - "C:/Users/gedim/AppData/Local/Microsoft/WindowsApps/rc.exe"
+      - "C:/Users/gedim/AppData/Local/Microsoft/WindowsApps/rc"
+      - "C:/Users/gedim/AppData/Local/Programs/Microsoft VS Code/bin/rc.com"
+      - "C:/Users/gedim/AppData/Local/Programs/Microsoft VS Code/bin/rc.exe"
+      - "C:/Users/gedim/AppData/Local/Programs/Microsoft VS Code/bin/rc"
+      - "C:/Users/gedim/AppData/Roaming/npm/rc.com"
+      - "C:/Users/gedim/AppData/Roaming/npm/rc.exe"
+      - "C:/Users/gedim/AppData/Roaming/npm/rc"
+      - "C:/Users/gedim/.dotnet/tools/rc.com"
+      - "C:/Users/gedim/.dotnet/tools/rc.exe"
+      - "C:/Users/gedim/.dotnet/tools/rc"
+      - "C:/Program Files/bin/rc.com"
+      - "C:/Program Files/bin/rc.exe"
+      - "C:/Program Files/bin/rc"
+      - "C:/Program Files/sbin/rc.com"
+      - "C:/Program Files/sbin/rc.exe"
+      - "C:/Program Files/sbin/rc"
+      - "C:/Program Files/rc.com"
+      - "C:/Program Files/rc.exe"
+      - "C:/Program Files/rc"
+      - "C:/Program Files (x86)/bin/rc.com"
+      - "C:/Program Files (x86)/bin/rc.exe"
+      - "C:/Program Files (x86)/bin/rc"
+      - "C:/Program Files (x86)/sbin/rc.com"
+      - "C:/Program Files (x86)/sbin/rc.exe"
+      - "C:/Program Files (x86)/sbin/rc"
+      - "C:/Program Files (x86)/rc.com"
+      - "C:/Program Files (x86)/rc.exe"
+      - "C:/Program Files (x86)/rc"
+      - "C:/Program Files/CMake/bin/rc.com"
+      - "C:/Program Files/CMake/bin/rc.exe"
+      - "C:/Program Files/CMake/bin/rc"
+      - "C:/Program Files/CMake/sbin/rc.com"
+      - "C:/Program Files/CMake/sbin/rc.exe"
+      - "C:/Program Files/CMake/sbin/rc"
+      - "C:/Program Files/CMake/rc.com"
+      - "C:/Program Files/CMake/rc.exe"
+      - "C:/Program Files/CMake/rc"
+      - "C:/Program Files (x86)/llama.cpp/bin/rc.com"
+      - "C:/Program Files (x86)/llama.cpp/bin/rc.exe"
+      - "C:/Program Files (x86)/llama.cpp/bin/rc"
+      - "C:/Program Files (x86)/llama.cpp/sbin/rc.com"
+      - "C:/Program Files (x86)/llama.cpp/sbin/rc.exe"
+      - "C:/Program Files (x86)/llama.cpp/sbin/rc"
+      - "C:/Program Files (x86)/llama.cpp/rc.com"
+      - "C:/Program Files (x86)/llama.cpp/rc.exe"
+      - "C:/Program Files (x86)/llama.cpp/rc"
+    found: false
+    search_context:
+      ENV{PATH}:
+        - "C:\\WINDOWS\\system32"
+        - "C:\\WINDOWS"
+        - "C:\\WINDOWS\\System32\\Wbem"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\WINDOWS\\System32\\OpenSSH\\"
+        - "C:\\Program Files\\nodejs\\"
+        - "C:\\Users\\gedim\\PyCharmMiscProject\\.venv\\Scripts"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:\\Program Files\\NVIDIA Corporation\\NVIDIA App\\NvDLISR"
+        - "C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
+        - "C:\\Program Files\\dotnet\\"
+        - "C:\\Program Files\\CMake\\bin"
+        - "C:\\Users\\gedim\\AppData\\Local\\Programs\\Python\\Launcher\\"
+        - "C:\\Users\\gedim\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\Users\\gedim\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
+        - "C:\\Users\\gedim\\AppData\\Roaming\\npm"
+        - "C:\\Users\\gedim\\.dotnet\\tools"
+      CMAKE_INSTALL_PREFIX: "C:/Program Files (x86)/llama.cpp"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "C:/Program Files"
+        - "C:/Program Files (x86)"
+        - "C:/Program Files/CMake"
+        - "C:/Program Files (x86)/llama.cpp"
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeDetermineCompilerABI.cmake:83 (try_compile)"
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    checks:
+      - "Detecting C compiler ABI info"
+    directories:
+      source: "C:/Users/gedim/Documents/Unreal Projects/Example/Source/Example/llama.cpp/build/CMakeFiles/CMakeScratch/TryCompile-shlmh3"
+      binary: "C:/Users/gedim/Documents/Unreal Projects/Example/Source/Example/llama.cpp/build/CMakeFiles/CMakeScratch/TryCompile-shlmh3"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS /W3"
+      CMAKE_C_FLAGS_DEBUG: "/MDd /Zi /Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      CMAKE_MSVC_RUNTIME_LIBRARY: "MultiThreadedDLL"
+    buildResult:
+      variable: "CMAKE_C_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/gedim/Documents/Unreal Projects/Example/Source/Example/llama.cpp/build/CMakeFiles/CMakeScratch/TryCompile-shlmh3'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_d059e.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        MSBuild-Version 17.14.18+a338add32 f├╝r .NET Framework
+        Der Buildvorgang wurde am 19.08.2025 06:15:20 gestartet.
+        
+        Projekt "C:\\Users\\gedim\\Documents\\Unreal Projects\\Example\\Source\\Example\\llama.cpp\\build\\CMakeFiles\\CMakeScratch\\TryCompile-shlmh3\\cmTC_d059e.vcxproj" auf Knoten "1" (Standardziele).
+        PrepareForBuild:
+          Das Verzeichnis "cmTC_d059e.dir\\Debug\\" wird erstellt.
+          Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
+          Das Verzeichnis "C:\\Users\\gedim\\Documents\\Unreal Projects\\Example\\Source\\Example\\llama.cpp\\build\\CMakeFiles\\CMakeScratch\\TryCompile-shlmh3\\Debug\\" wird erstellt.
+          Das Verzeichnis "cmTC_d059e.dir\\Debug\\cmTC_d059e.tlog\\" wird erstellt.
+        InitializeBuildStatus:
+          "cmTC_d059e.dir\\Debug\\cmTC_d059e.tlog\\unsuccessfulbuild" wird erstellt, da "AlwaysCreate" angegeben wurde.
+          Aktualisieren des Timestamps von "cmTC_d059e.dir\\Debug\\cmTC_d059e.tlog\\unsuccessfulbuild".
+        ClCompile:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\HostX64\\x64\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Fo"cmTC_d059e.dir\\Debug\\\\" /Fd"cmTC_d059e.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-4.1\\Modules\\CMakeCCompilerABI.c"
+          Microsoft (R) C/C++ Optimizing Compiler Version 19.38.33145 for x64
+          Copyright (C) Microsoft Corporation.  All rights reserved.
+          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Fo"cmTC_d059e.dir\\Debug\\\\" /Fd"cmTC_d059e.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-4.1\\Modules\\CMakeCCompilerABI.c"
+          CMakeCCompilerABI.c
+        Link:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\HostX64\\x64\\link.exe /OUT:"C:\\Users\\gedim\\Documents\\Unreal Projects\\Example\\Source\\Example\\llama.cpp\\build\\CMakeFiles\\CMakeScratch\\TryCompile-shlmh3\\Debug\\cmTC_d059e.exe" /INCREMENTAL /ILK:"cmTC_d059e.dir\\Debug\\cmTC_d059e.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/gedim/Documents/Unreal Projects/Example/Source/Example/llama.cpp/build/CMakeFiles/CMakeScratch/TryCompile-shlmh3/Debug/cmTC_d059e.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /IMPLIB:"C:/Users/gedim/Documents/Unreal Projects/Example/Source/Example/llama.cpp/build/CMakeFiles/CMakeScratch/TryCompile-shlmh3/Debug/cmTC_d059e.lib" /MACHINE:X64  /machine:x64 cmTC_d059e.dir\\Debug\\CMakeCCompilerABI.obj
+          cmTC_d059e.vcxproj -> C:\\Users\\gedim\\Documents\\Unreal Projects\\Example\\Source\\Example\\llama.cpp\\build\\CMakeFiles\\CMakeScratch\\TryCompile-shlmh3\\Debug\\cmTC_d059e.exe
+        FinalizeBuildStatus:
+          Die Datei "cmTC_d059e.dir\\Debug\\cmTC_d059e.tlog\\unsuccessfulbuild" wird gel├Âscht.
+          Aktualisieren des Timestamps von "cmTC_d059e.dir\\Debug\\cmTC_d059e.tlog\\cmTC_d059e.lastbuildstate".
+        Die Erstellung von Projekt "C:\\Users\\gedim\\Documents\\Unreal Projects\\Example\\Source\\Example\\llama.cpp\\build\\CMakeFiles\\CMakeScratch\\TryCompile-shlmh3\\cmTC_d059e.vcxproj" ist abgeschlossen (Standardziele).
+        
+        Der Buildvorgang wurde erfolgreich ausgef├╝hrt.
+            0 Warnung(en)
+            0 Fehler
+        
+        Verstrichene Zeit 00:00:01.60
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeDetermineCompilerABI.cmake:253 (message)"
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Parsed C implicit link information:
+        link line regex: [^( *|.*[/\\])(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)|link\\.exe|lld-link(\\.exe)?|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        linker tool regex: [^[ 	]*(->|")?[ 	]*(([^"]*[/\\])?(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)|link\\.exe|lld-link(\\.exe)?))("|,| |$)]
+        linker tool for 'C': C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.38.33130/bin/HostX64/x64/link.exe
+        implicit libs: []
+        implicit objs: []
+        implicit dirs: []
+        implicit fwks: []
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/Internal/CMakeDetermineLinkerId.cmake:36 (message)"
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeDetermineCompilerABI.cmake:299 (cmake_determine_linker_id)"
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Running the C compiler's linker: "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.38.33130/bin/HostX64/x64/link.exe" "-v"
+      Microsoft (R) Incremental Linker Version 14.38.33145.0
+      Copyright (C) Microsoft Corporation.  All rights reserved.
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeDetermineCompilerABI.cmake:83 (try_compile)"
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    checks:
+      - "Detecting CXX compiler ABI info"
+    directories:
+      source: "C:/Users/gedim/Documents/Unreal Projects/Example/Source/Example/llama.cpp/build/CMakeFiles/CMakeScratch/TryCompile-7ntedh"
+      binary: "C:/Users/gedim/Documents/Unreal Projects/Example/Source/Example/llama.cpp/build/CMakeFiles/CMakeScratch/TryCompile-7ntedh"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /W3 /GR /EHsc"
+      CMAKE_CXX_FLAGS_DEBUG: "/MDd /Zi /Ob0 /Od /RTC1"
+      CMAKE_CXX_SCAN_FOR_MODULES: "OFF"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      CMAKE_MSVC_RUNTIME_LIBRARY: "MultiThreadedDLL"
+    buildResult:
+      variable: "CMAKE_CXX_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/gedim/Documents/Unreal Projects/Example/Source/Example/llama.cpp/build/CMakeFiles/CMakeScratch/TryCompile-7ntedh'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_865df.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        MSBuild-Version 17.14.18+a338add32 f├╝r .NET Framework
+        Der Buildvorgang wurde am 19.08.2025 06:15:23 gestartet.
+        
+        Projekt "C:\\Users\\gedim\\Documents\\Unreal Projects\\Example\\Source\\Example\\llama.cpp\\build\\CMakeFiles\\CMakeScratch\\TryCompile-7ntedh\\cmTC_865df.vcxproj" auf Knoten "1" (Standardziele).
+        PrepareForBuild:
+          Das Verzeichnis "cmTC_865df.dir\\Debug\\" wird erstellt.
+          Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
+          Das Verzeichnis "C:\\Users\\gedim\\Documents\\Unreal Projects\\Example\\Source\\Example\\llama.cpp\\build\\CMakeFiles\\CMakeScratch\\TryCompile-7ntedh\\Debug\\" wird erstellt.
+          Das Verzeichnis "cmTC_865df.dir\\Debug\\cmTC_865df.tlog\\" wird erstellt.
+        InitializeBuildStatus:
+          "cmTC_865df.dir\\Debug\\cmTC_865df.tlog\\unsuccessfulbuild" wird erstellt, da "AlwaysCreate" angegeben wurde.
+          Aktualisieren des Timestamps von "cmTC_865df.dir\\Debug\\cmTC_865df.tlog\\unsuccessfulbuild".
+        ClCompile:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\HostX64\\x64\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GS /fp:precise /GR /Fo"cmTC_865df.dir\\Debug\\\\" /Fd"cmTC_865df.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TP /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-4.1\\Modules\\CMakeCXXCompilerABI.cpp"
+          Microsoft (R) C/C++ Optimizing Compiler Version 19.38.33145 for x64
+          Copyright (C) Microsoft Corporation.  All rights reserved.
+          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GS /fp:precise /GR /Fo"cmTC_865df.dir\\Debug\\\\" /Fd"cmTC_865df.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TP /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-4.1\\Modules\\CMakeCXXCompilerABI.cpp"
+          CMakeCXXCompilerABI.cpp
+        Link:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\HostX64\\x64\\link.exe /OUT:"C:\\Users\\gedim\\Documents\\Unreal Projects\\Example\\Source\\Example\\llama.cpp\\build\\CMakeFiles\\CMakeScratch\\TryCompile-7ntedh\\Debug\\cmTC_865df.exe" /INCREMENTAL /ILK:"cmTC_865df.dir\\Debug\\cmTC_865df.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/gedim/Documents/Unreal Projects/Example/Source/Example/llama.cpp/build/CMakeFiles/CMakeScratch/TryCompile-7ntedh/Debug/cmTC_865df.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /IMPLIB:"C:/Users/gedim/Documents/Unreal Projects/Example/Source/Example/llama.cpp/build/CMakeFiles/CMakeScratch/TryCompile-7ntedh/Debug/cmTC_865df.lib" /MACHINE:X64  /machine:x64 cmTC_865df.dir\\Debug\\CMakeCXXCompilerABI.obj
+          cmTC_865df.vcxproj -> C:\\Users\\gedim\\Documents\\Unreal Projects\\Example\\Source\\Example\\llama.cpp\\build\\CMakeFiles\\CMakeScratch\\TryCompile-7ntedh\\Debug\\cmTC_865df.exe
+        FinalizeBuildStatus:
+          Die Datei "cmTC_865df.dir\\Debug\\cmTC_865df.tlog\\unsuccessfulbuild" wird gel├Âscht.
+          Aktualisieren des Timestamps von "cmTC_865df.dir\\Debug\\cmTC_865df.tlog\\cmTC_865df.lastbuildstate".
+        Die Erstellung von Projekt "C:\\Users\\gedim\\Documents\\Unreal Projects\\Example\\Source\\Example\\llama.cpp\\build\\CMakeFiles\\CMakeScratch\\TryCompile-7ntedh\\cmTC_865df.vcxproj" ist abgeschlossen (Standardziele).
+        
+        Der Buildvorgang wurde erfolgreich ausgef├╝hrt.
+            0 Warnung(en)
+            0 Fehler
+        
+        Verstrichene Zeit 00:00:01.64
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeDetermineCompilerABI.cmake:253 (message)"
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Parsed CXX implicit link information:
+        link line regex: [^( *|.*[/\\])(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)|link\\.exe|lld-link(\\.exe)?|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        linker tool regex: [^[ 	]*(->|")?[ 	]*(([^"]*[/\\])?(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)|link\\.exe|lld-link(\\.exe)?))("|,| |$)]
+        linker tool for 'CXX': C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.38.33130/bin/HostX64/x64/link.exe
+        implicit libs: []
+        implicit objs: []
+        implicit dirs: []
+        implicit fwks: []
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/Internal/CMakeDetermineLinkerId.cmake:36 (message)"
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeDetermineCompilerABI.cmake:299 (cmake_determine_linker_id)"
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Running the CXX compiler's linker: "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.38.33130/bin/HostX64/x64/link.exe" "-v"
+      Microsoft (R) Incremental Linker Version 14.38.33145.0
+      Copyright (C) Microsoft Corporation.  All rights reserved.
+  -
+    kind: "find-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/FindGit.cmake:86 (find_program)"
+      - "cmake/git-vars.cmake:1 (find_package)"
+      - "CMakeLists.txt:26 (include)"
+    mode: "program"
+    variable: "GIT_EXECUTABLE"
+    description: "Git command line client"
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "git.cmd"
+      - "git"
+    candidate_directories:
+      - "C:/Windows/System32/"
+      - "C:/Windows/"
+      - "C:/Windows/System32/wbem/"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/"
+      - "C:/Windows/System32/OpenSSH/"
+      - "C:/Program Files/nodejs/"
+      - "C:/Users/gedim/PyCharmMiscProject/.venv/Scripts/"
+      - "C:/Program Files/Git/cmd/"
+      - "C:/Program Files/NVIDIA Corporation/NVIDIA App/NvDLISR/"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/"
+      - "C:/Program Files/dotnet/"
+      - "C:/Program Files/CMake/bin/"
+      - "C:/Users/gedim/AppData/Local/Programs/Python/Launcher/"
+      - "C:/Users/gedim/AppData/Local/Microsoft/WindowsApps/"
+      - "C:/Users/gedim/AppData/Local/Programs/Microsoft VS Code/bin/"
+      - "C:/Users/gedim/AppData/Roaming/npm/"
+      - "C:/Users/gedim/.dotnet/tools/"
+      - "C:/Program Files/bin/"
+      - "C:/Program Files/sbin/"
+      - "C:/Program Files/"
+      - "C:/Program Files (x86)/bin/"
+      - "C:/Program Files (x86)/sbin/"
+      - "C:/Program Files (x86)/"
+      - "C:/Program Files/CMake/bin/"
+      - "C:/Program Files/CMake/sbin/"
+      - "C:/Program Files/CMake/"
+      - "C:/Program Files (x86)/llama.cpp/bin/"
+      - "C:/Program Files (x86)/llama.cpp/sbin/"
+      - "C:/Program Files (x86)/llama.cpp/"
+      - "C:/Users/gedim/AppData/Local/Atlassian/SourceTree/git_local/bin/"
+    searched_directories:
+      - "C:/Windows/System32/git.cmd.com"
+      - "C:/Windows/System32/git.cmd.exe"
+      - "C:/Windows/System32/git.cmd"
+      - "C:/Windows/git.cmd.com"
+      - "C:/Windows/git.cmd.exe"
+      - "C:/Windows/git.cmd"
+      - "C:/Windows/System32/wbem/git.cmd.com"
+      - "C:/Windows/System32/wbem/git.cmd.exe"
+      - "C:/Windows/System32/wbem/git.cmd"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/git.cmd.com"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/git.cmd.exe"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/git.cmd"
+      - "C:/Windows/System32/OpenSSH/git.cmd.com"
+      - "C:/Windows/System32/OpenSSH/git.cmd.exe"
+      - "C:/Windows/System32/OpenSSH/git.cmd"
+      - "C:/Program Files/nodejs/git.cmd.com"
+      - "C:/Program Files/nodejs/git.cmd.exe"
+      - "C:/Program Files/nodejs/git.cmd"
+      - "C:/Users/gedim/PyCharmMiscProject/.venv/Scripts/git.cmd.com"
+      - "C:/Users/gedim/PyCharmMiscProject/.venv/Scripts/git.cmd.exe"
+      - "C:/Users/gedim/PyCharmMiscProject/.venv/Scripts/git.cmd"
+      - "C:/Program Files/Git/cmd/git.cmd.com"
+      - "C:/Program Files/Git/cmd/git.cmd.exe"
+      - "C:/Program Files/Git/cmd/git.cmd"
+      - "C:/Program Files/NVIDIA Corporation/NVIDIA App/NvDLISR/git.cmd.com"
+      - "C:/Program Files/NVIDIA Corporation/NVIDIA App/NvDLISR/git.cmd.exe"
+      - "C:/Program Files/NVIDIA Corporation/NVIDIA App/NvDLISR/git.cmd"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/git.cmd.com"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/git.cmd.exe"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/git.cmd"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/git.cmd.com"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/git.cmd.exe"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/git.cmd"
+      - "C:/Program Files/dotnet/git.cmd.com"
+      - "C:/Program Files/dotnet/git.cmd.exe"
+      - "C:/Program Files/dotnet/git.cmd"
+      - "C:/Program Files/CMake/bin/git.cmd.com"
+      - "C:/Program Files/CMake/bin/git.cmd.exe"
+      - "C:/Program Files/CMake/bin/git.cmd"
+      - "C:/Users/gedim/AppData/Local/Programs/Python/Launcher/git.cmd.com"
+      - "C:/Users/gedim/AppData/Local/Programs/Python/Launcher/git.cmd.exe"
+      - "C:/Users/gedim/AppData/Local/Programs/Python/Launcher/git.cmd"
+      - "C:/Users/gedim/AppData/Local/Microsoft/WindowsApps/git.cmd.com"
+      - "C:/Users/gedim/AppData/Local/Microsoft/WindowsApps/git.cmd.exe"
+      - "C:/Users/gedim/AppData/Local/Microsoft/WindowsApps/git.cmd"
+      - "C:/Users/gedim/AppData/Local/Programs/Microsoft VS Code/bin/git.cmd.com"
+      - "C:/Users/gedim/AppData/Local/Programs/Microsoft VS Code/bin/git.cmd.exe"
+      - "C:/Users/gedim/AppData/Local/Programs/Microsoft VS Code/bin/git.cmd"
+      - "C:/Users/gedim/AppData/Roaming/npm/git.cmd.com"
+      - "C:/Users/gedim/AppData/Roaming/npm/git.cmd.exe"
+      - "C:/Users/gedim/AppData/Roaming/npm/git.cmd"
+      - "C:/Users/gedim/.dotnet/tools/git.cmd.com"
+      - "C:/Users/gedim/.dotnet/tools/git.cmd.exe"
+      - "C:/Users/gedim/.dotnet/tools/git.cmd"
+      - "C:/Program Files/bin/git.cmd.com"
+      - "C:/Program Files/bin/git.cmd.exe"
+      - "C:/Program Files/bin/git.cmd"
+      - "C:/Program Files/sbin/git.cmd.com"
+      - "C:/Program Files/sbin/git.cmd.exe"
+      - "C:/Program Files/sbin/git.cmd"
+      - "C:/Program Files/git.cmd.com"
+      - "C:/Program Files/git.cmd.exe"
+      - "C:/Program Files/git.cmd"
+      - "C:/Program Files (x86)/bin/git.cmd.com"
+      - "C:/Program Files (x86)/bin/git.cmd.exe"
+      - "C:/Program Files (x86)/bin/git.cmd"
+      - "C:/Program Files (x86)/sbin/git.cmd.com"
+      - "C:/Program Files (x86)/sbin/git.cmd.exe"
+      - "C:/Program Files (x86)/sbin/git.cmd"
+      - "C:/Program Files (x86)/git.cmd.com"
+      - "C:/Program Files (x86)/git.cmd.exe"
+      - "C:/Program Files (x86)/git.cmd"
+      - "C:/Program Files/CMake/bin/git.cmd.com"
+      - "C:/Program Files/CMake/bin/git.cmd.exe"
+      - "C:/Program Files/CMake/bin/git.cmd"
+      - "C:/Program Files/CMake/sbin/git.cmd.com"
+      - "C:/Program Files/CMake/sbin/git.cmd.exe"
+      - "C:/Program Files/CMake/sbin/git.cmd"
+      - "C:/Program Files/CMake/git.cmd.com"
+      - "C:/Program Files/CMake/git.cmd.exe"
+      - "C:/Program Files/CMake/git.cmd"
+      - "C:/Program Files (x86)/llama.cpp/bin/git.cmd.com"
+      - "C:/Program Files (x86)/llama.cpp/bin/git.cmd.exe"
+      - "C:/Program Files (x86)/llama.cpp/bin/git.cmd"
+      - "C:/Program Files (x86)/llama.cpp/sbin/git.cmd.com"
+      - "C:/Program Files (x86)/llama.cpp/sbin/git.cmd.exe"
+      - "C:/Program Files (x86)/llama.cpp/sbin/git.cmd"
+      - "C:/Program Files (x86)/llama.cpp/git.cmd.com"
+      - "C:/Program Files (x86)/llama.cpp/git.cmd.exe"
+      - "C:/Program Files (x86)/llama.cpp/git.cmd"
+      - "C:/Users/gedim/AppData/Local/Atlassian/SourceTree/git_local/bin/git.cmd.com"
+      - "C:/Users/gedim/AppData/Local/Atlassian/SourceTree/git_local/bin/git.cmd.exe"
+      - "C:/Users/gedim/AppData/Local/Atlassian/SourceTree/git_local/bin/git.cmd"
+      - "C:/Windows/System32/git.com"
+      - "C:/Windows/System32/git.exe"
+      - "C:/Windows/System32/git"
+      - "C:/Windows/git.com"
+      - "C:/Windows/git.exe"
+      - "C:/Windows/git"
+      - "C:/Windows/System32/wbem/git.com"
+      - "C:/Windows/System32/wbem/git.exe"
+      - "C:/Windows/System32/wbem/git"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/git.com"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/git.exe"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/git"
+      - "C:/Windows/System32/OpenSSH/git.com"
+      - "C:/Windows/System32/OpenSSH/git.exe"
+      - "C:/Windows/System32/OpenSSH/git"
+      - "C:/Program Files/nodejs/git.com"
+      - "C:/Program Files/nodejs/git.exe"
+      - "C:/Program Files/nodejs/git"
+      - "C:/Users/gedim/PyCharmMiscProject/.venv/Scripts/git.com"
+      - "C:/Users/gedim/PyCharmMiscProject/.venv/Scripts/git.exe"
+      - "C:/Users/gedim/PyCharmMiscProject/.venv/Scripts/git"
+      - "C:/Program Files/Git/cmd/git.com"
+    found: "C:/Program Files/Git/cmd/git.exe"
+    search_context:
+      ENV{PATH}:
+        - "C:\\WINDOWS\\system32"
+        - "C:\\WINDOWS"
+        - "C:\\WINDOWS\\System32\\Wbem"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\WINDOWS\\System32\\OpenSSH\\"
+        - "C:\\Program Files\\nodejs\\"
+        - "C:\\Users\\gedim\\PyCharmMiscProject\\.venv\\Scripts"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:\\Program Files\\NVIDIA Corporation\\NVIDIA App\\NvDLISR"
+        - "C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
+        - "C:\\Program Files\\dotnet\\"
+        - "C:\\Program Files\\CMake\\bin"
+        - "C:\\Users\\gedim\\AppData\\Local\\Programs\\Python\\Launcher\\"
+        - "C:\\Users\\gedim\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\Users\\gedim\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
+        - "C:\\Users\\gedim\\AppData\\Roaming\\npm"
+        - "C:\\Users\\gedim\\.dotnet\\tools"
+      CMAKE_INSTALL_PREFIX: "C:/Program Files (x86)/llama.cpp"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "C:/Program Files"
+        - "C:/Program Files (x86)"
+        - "C:/Program Files/CMake"
+        - "C:/Program Files (x86)/llama.cpp"
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/Internal/CheckSourceCompiles.cmake:104 (try_compile)"
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CheckCSourceCompiles.cmake:103 (cmake_check_source_compiles)"
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/FindThreads.cmake:97 (check_c_source_compiles)"
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/FindThreads.cmake:163 (_threads_check_libc)"
+      - "ggml/CMakeLists.txt:237 (find_package)"
+    checks:
+      - "Performing Test CMAKE_HAVE_LIBC_PTHREAD"
+    directories:
+      source: "C:/Users/gedim/Documents/Unreal Projects/Example/Source/Example/llama.cpp/build/CMakeFiles/CMakeScratch/TryCompile-3dh8pw"
+      binary: "C:/Users/gedim/Documents/Unreal Projects/Example/Source/Example/llama.cpp/build/CMakeFiles/CMakeScratch/TryCompile-3dh8pw"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS /W3"
+      CMAKE_C_FLAGS_DEBUG: "/MDd /Zi /Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      CMAKE_MODULE_PATH: "C:/Users/gedim/Documents/Unreal Projects/Example/Source/Example/llama.cpp/cmake/"
+      CMAKE_MSVC_RUNTIME_LIBRARY: "MultiThreadedDLL"
+    buildResult:
+      variable: "CMAKE_HAVE_LIBC_PTHREAD"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/gedim/Documents/Unreal Projects/Example/Source/Example/llama.cpp/build/CMakeFiles/CMakeScratch/TryCompile-3dh8pw'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_c1df2.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        MSBuild-Version 17.14.18+a338add32 f├╝r .NET Framework
+        Der Buildvorgang wurde am 19.08.2025 06:15:25 gestartet.
+        
+        Projekt "C:\\Users\\gedim\\Documents\\Unreal Projects\\Example\\Source\\Example\\llama.cpp\\build\\CMakeFiles\\CMakeScratch\\TryCompile-3dh8pw\\cmTC_c1df2.vcxproj" auf Knoten "1" (Standardziele).
+        PrepareForBuild:
+          Das Verzeichnis "cmTC_c1df2.dir\\Debug\\" wird erstellt.
+          Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
+          Das Verzeichnis "C:\\Users\\gedim\\Documents\\Unreal Projects\\Example\\Source\\Example\\llama.cpp\\build\\CMakeFiles\\CMakeScratch\\TryCompile-3dh8pw\\Debug\\" wird erstellt.
+          Das Verzeichnis "cmTC_c1df2.dir\\Debug\\cmTC_c1df2.tlog\\" wird erstellt.
+        InitializeBuildStatus:
+          "cmTC_c1df2.dir\\Debug\\cmTC_c1df2.tlog\\unsuccessfulbuild" wird erstellt, da "AlwaysCreate" angegeben wurde.
+          Aktualisieren des Timestamps von "cmTC_c1df2.dir\\Debug\\cmTC_c1df2.tlog\\unsuccessfulbuild".
+        ClCompile:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\HostX64\\x64\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CMAKE_HAVE_LIBC_PTHREAD /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /std:c11 /Fo"cmTC_c1df2.dir\\Debug\\\\" /Fd"cmTC_c1df2.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Users\\gedim\\Documents\\Unreal Projects\\Example\\Source\\Example\\llama.cpp\\build\\CMakeFiles\\CMakeScratch\\TryCompile-3dh8pw\\src.c"
+          Microsoft (R) C/C++ Optimizing Compiler Version 19.38.33145 for x64
+          Copyright (C) Microsoft Corporation.  All rights reserved.
+          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CMAKE_HAVE_LIBC_PTHREAD /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /std:c11 /Fo"cmTC_c1df2.dir\\Debug\\\\" /Fd"cmTC_c1df2.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Users\\gedim\\Documents\\Unreal Projects\\Example\\Source\\Example\\llama.cpp\\build\\CMakeFiles\\CMakeScratch\\TryCompile-3dh8pw\\src.c"
+          src.c
+        C:\\Users\\gedim\\Documents\\Unreal Projects\\Example\\Source\\Example\\llama.cpp\\build\\CMakeFiles\\CMakeScratch\\TryCompile-3dh8pw\\src.c(1,1): error C1083: Cannot open include file: 'pthread.h': No such file or directory [C:\\Users\\gedim\\Documents\\Unreal Projects\\Example\\Source\\Example\\llama.cpp\\build\\CMakeFiles\\CMakeScratch\\TryCompile-3dh8pw\\cmTC_c1df2.vcxproj]
+        Die Erstellung des Projekts "C:\\Users\\gedim\\Documents\\Unreal Projects\\Example\\Source\\Example\\llama.cpp\\build\\CMakeFiles\\CMakeScratch\\TryCompile-3dh8pw\\cmTC_c1df2.vcxproj" ist abgeschlossen (Standardziele) -- FEHLER.
+        
+        Fehler beim Buildvorgang.
+        
+        "C:\\Users\\gedim\\Documents\\Unreal Projects\\Example\\Source\\Example\\llama.cpp\\build\\CMakeFiles\\CMakeScratch\\TryCompile-3dh8pw\\cmTC_c1df2.vcxproj" (Standardziel) (1) ->
+        (ClCompile Ziel) -> 
+          C:\\Users\\gedim\\Documents\\Unreal Projects\\Example\\Source\\Example\\llama.cpp\\build\\CMakeFiles\\CMakeScratch\\TryCompile-3dh8pw\\src.c(1,1): error C1083: Cannot open include file: 'pthread.h': No such file or directory [C:\\Users\\gedim\\Documents\\Unreal Projects\\Example\\Source\\Example\\llama.cpp\\build\\CMakeFiles\\CMakeScratch\\TryCompile-3dh8pw\\cmTC_c1df2.vcxproj]
+        
+            0 Warnung(en)
+            1 Fehler
+        
+        Verstrichene Zeit 00:00:01.63
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CheckLibraryExists.cmake:154 (try_compile)"
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/FindThreads.cmake:112 (check_library_exists)"
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/FindThreads.cmake:175 (_threads_check_lib)"
+      - "ggml/CMakeLists.txt:237 (find_package)"
+    checks:
+      - "Looking for pthread_create in pthreads"
+    directories:
+      source: "C:/Users/gedim/Documents/Unreal Projects/Example/Source/Example/llama.cpp/build/CMakeFiles/CMakeScratch/TryCompile-yr2uce"
+      binary: "C:/Users/gedim/Documents/Unreal Projects/Example/Source/Example/llama.cpp/build/CMakeFiles/CMakeScratch/TryCompile-yr2uce"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS /W3"
+      CMAKE_C_FLAGS_DEBUG: "/MDd /Zi /Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      CMAKE_MODULE_PATH: "C:/Users/gedim/Documents/Unreal Projects/Example/Source/Example/llama.cpp/cmake/"
+      CMAKE_MSVC_RUNTIME_LIBRARY: "MultiThreadedDLL"
+    buildResult:
+      variable: "CMAKE_HAVE_PTHREADS_CREATE"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/gedim/Documents/Unreal Projects/Example/Source/Example/llama.cpp/build/CMakeFiles/CMakeScratch/TryCompile-yr2uce'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_05cd9.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        MSBuild-Version 17.14.18+a338add32 f├╝r .NET Framework
+        Der Buildvorgang wurde am 19.08.2025 06:15:28 gestartet.
+        
+        Projekt "C:\\Users\\gedim\\Documents\\Unreal Projects\\Example\\Source\\Example\\llama.cpp\\build\\CMakeFiles\\CMakeScratch\\TryCompile-yr2uce\\cmTC_05cd9.vcxproj" auf Knoten "1" (Standardziele).
+        PrepareForBuild:
+          Das Verzeichnis "cmTC_05cd9.dir\\Debug\\" wird erstellt.
+          Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
+          Das Verzeichnis "C:\\Users\\gedim\\Documents\\Unreal Projects\\Example\\Source\\Example\\llama.cpp\\build\\CMakeFiles\\CMakeScratch\\TryCompile-yr2uce\\Debug\\" wird erstellt.
+          Das Verzeichnis "cmTC_05cd9.dir\\Debug\\cmTC_05cd9.tlog\\" wird erstellt.
+        InitializeBuildStatus:
+          "cmTC_05cd9.dir\\Debug\\cmTC_05cd9.tlog\\unsuccessfulbuild" wird erstellt, da "AlwaysCreate" angegeben wurde.
+          Aktualisieren des Timestamps von "cmTC_05cd9.dir\\Debug\\cmTC_05cd9.tlog\\unsuccessfulbuild".
+        ClCompile:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\HostX64\\x64\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /std:c11 /Fo"cmTC_05cd9.dir\\Debug\\\\" /Fd"cmTC_05cd9.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Users\\gedim\\Documents\\Unreal Projects\\Example\\Source\\Example\\llama.cpp\\build\\CMakeFiles\\CMakeScratch\\TryCompile-yr2uce\\CheckFunctionExists.c"
+          Microsoft (R) C/C++ Optimizing Compiler Version 19.38.33145 for x64
+          Copyright (C) Microsoft Corporation.  All rights reserved.
+          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /std:c11 /Fo"cmTC_05cd9.dir\\Debug\\\\" /Fd"cmTC_05cd9.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Users\\gedim\\Documents\\Unreal Projects\\Example\\Source\\Example\\llama.cpp\\build\\CMakeFiles\\CMakeScratch\\TryCompile-yr2uce\\CheckFunctionExists.c"
+          CheckFunctionExists.c
+        Link:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\HostX64\\x64\\link.exe /OUT:"C:\\Users\\gedim\\Documents\\Unreal Projects\\Example\\Source\\Example\\llama.cpp\\build\\CMakeFiles\\CMakeScratch\\TryCompile-yr2uce\\Debug\\cmTC_05cd9.exe" /INCREMENTAL /ILK:"cmTC_05cd9.dir\\Debug\\cmTC_05cd9.ilk" /NOLOGO pthreads.lib kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/gedim/Documents/Unreal Projects/Example/Source/Example/llama.cpp/build/CMakeFiles/CMakeScratch/TryCompile-yr2uce/Debug/cmTC_05cd9.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /IMPLIB:"C:/Users/gedim/Documents/Unreal Projects/Example/Source/Example/llama.cpp/build/CMakeFiles/CMakeScratch/TryCompile-yr2uce/Debug/cmTC_05cd9.lib" /MACHINE:X64  /machine:x64 cmTC_05cd9.dir\\Debug\\CheckFunctionExists.obj
+        LINK : fatal error LNK1104: cannot open file 'pthreads.lib' [C:\\Users\\gedim\\Documents\\Unreal Projects\\Example\\Source\\Example\\llama.cpp\\build\\CMakeFiles\\CMakeScratch\\TryCompile-yr2uce\\cmTC_05cd9.vcxproj]
+        Die Erstellung des Projekts "C:\\Users\\gedim\\Documents\\Unreal Projects\\Example\\Source\\Example\\llama.cpp\\build\\CMakeFiles\\CMakeScratch\\TryCompile-yr2uce\\cmTC_05cd9.vcxproj" ist abgeschlossen (Standardziele) -- FEHLER.
+        
+        Fehler beim Buildvorgang.
+        
+        "C:\\Users\\gedim\\Documents\\Unreal Projects\\Example\\Source\\Example\\llama.cpp\\build\\CMakeFiles\\CMakeScratch\\TryCompile-yr2uce\\cmTC_05cd9.vcxproj" (Standardziel) (1) ->
+        (Link Ziel) -> 
+          LINK : fatal error LNK1104: cannot open file 'pthreads.lib' [C:\\Users\\gedim\\Documents\\Unreal Projects\\Example\\Source\\Example\\llama.cpp\\build\\CMakeFiles\\CMakeScratch\\TryCompile-yr2uce\\cmTC_05cd9.vcxproj]
+        
+            0 Warnung(en)
+            1 Fehler
+        
+        Verstrichene Zeit 00:00:01.51
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CheckLibraryExists.cmake:154 (try_compile)"
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/FindThreads.cmake:112 (check_library_exists)"
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/FindThreads.cmake:176 (_threads_check_lib)"
+      - "ggml/CMakeLists.txt:237 (find_package)"
+    checks:
+      - "Looking for pthread_create in pthread"
+    directories:
+      source: "C:/Users/gedim/Documents/Unreal Projects/Example/Source/Example/llama.cpp/build/CMakeFiles/CMakeScratch/TryCompile-rehpi2"
+      binary: "C:/Users/gedim/Documents/Unreal Projects/Example/Source/Example/llama.cpp/build/CMakeFiles/CMakeScratch/TryCompile-rehpi2"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS /W3"
+      CMAKE_C_FLAGS_DEBUG: "/MDd /Zi /Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      CMAKE_MODULE_PATH: "C:/Users/gedim/Documents/Unreal Projects/Example/Source/Example/llama.cpp/cmake/"
+      CMAKE_MSVC_RUNTIME_LIBRARY: "MultiThreadedDLL"
+    buildResult:
+      variable: "CMAKE_HAVE_PTHREAD_CREATE"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/gedim/Documents/Unreal Projects/Example/Source/Example/llama.cpp/build/CMakeFiles/CMakeScratch/TryCompile-rehpi2'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_18d2d.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        MSBuild-Version 17.14.18+a338add32 f├╝r .NET Framework
+        Der Buildvorgang wurde am 19.08.2025 06:15:30 gestartet.
+        
+        Projekt "C:\\Users\\gedim\\Documents\\Unreal Projects\\Example\\Source\\Example\\llama.cpp\\build\\CMakeFiles\\CMakeScratch\\TryCompile-rehpi2\\cmTC_18d2d.vcxproj" auf Knoten "1" (Standardziele).
+        PrepareForBuild:
+          Das Verzeichnis "cmTC_18d2d.dir\\Debug\\" wird erstellt.
+          Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
+          Das Verzeichnis "C:\\Users\\gedim\\Documents\\Unreal Projects\\Example\\Source\\Example\\llama.cpp\\build\\CMakeFiles\\CMakeScratch\\TryCompile-rehpi2\\Debug\\" wird erstellt.
+          Das Verzeichnis "cmTC_18d2d.dir\\Debug\\cmTC_18d2d.tlog\\" wird erstellt.
+        InitializeBuildStatus:
+          "cmTC_18d2d.dir\\Debug\\cmTC_18d2d.tlog\\unsuccessfulbuild" wird erstellt, da "AlwaysCreate" angegeben wurde.
+          Aktualisieren des Timestamps von "cmTC_18d2d.dir\\Debug\\cmTC_18d2d.tlog\\unsuccessfulbuild".
+        ClCompile:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\HostX64\\x64\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /std:c11 /Fo"cmTC_18d2d.dir\\Debug\\\\" /Fd"cmTC_18d2d.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Users\\gedim\\Documents\\Unreal Projects\\Example\\Source\\Example\\llama.cpp\\build\\CMakeFiles\\CMakeScratch\\TryCompile-rehpi2\\CheckFunctionExists.c"
+          Microsoft (R) C/C++ Optimizing Compiler Version 19.38.33145 for x64
+          Copyright (C) Microsoft Corporation.  All rights reserved.
+          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /std:c11 /Fo"cmTC_18d2d.dir\\Debug\\\\" /Fd"cmTC_18d2d.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Users\\gedim\\Documents\\Unreal Projects\\Example\\Source\\Example\\llama.cpp\\build\\CMakeFiles\\CMakeScratch\\TryCompile-rehpi2\\CheckFunctionExists.c"
+          CheckFunctionExists.c
+        Link:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\HostX64\\x64\\link.exe /OUT:"C:\\Users\\gedim\\Documents\\Unreal Projects\\Example\\Source\\Example\\llama.cpp\\build\\CMakeFiles\\CMakeScratch\\TryCompile-rehpi2\\Debug\\cmTC_18d2d.exe" /INCREMENTAL /ILK:"cmTC_18d2d.dir\\Debug\\cmTC_18d2d.ilk" /NOLOGO pthread.lib kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/gedim/Documents/Unreal Projects/Example/Source/Example/llama.cpp/build/CMakeFiles/CMakeScratch/TryCompile-rehpi2/Debug/cmTC_18d2d.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /IMPLIB:"C:/Users/gedim/Documents/Unreal Projects/Example/Source/Example/llama.cpp/build/CMakeFiles/CMakeScratch/TryCompile-rehpi2/Debug/cmTC_18d2d.lib" /MACHINE:X64  /machine:x64 cmTC_18d2d.dir\\Debug\\CheckFunctionExists.obj
+        LINK : fatal error LNK1104: cannot open file 'pthread.lib' [C:\\Users\\gedim\\Documents\\Unreal Projects\\Example\\Source\\Example\\llama.cpp\\build\\CMakeFiles\\CMakeScratch\\TryCompile-rehpi2\\cmTC_18d2d.vcxproj]
+        Die Erstellung des Projekts "C:\\Users\\gedim\\Documents\\Unreal Projects\\Example\\Source\\Example\\llama.cpp\\build\\CMakeFiles\\CMakeScratch\\TryCompile-rehpi2\\cmTC_18d2d.vcxproj" ist abgeschlossen (Standardziele) -- FEHLER.
+        
+        Fehler beim Buildvorgang.
+        
+        "C:\\Users\\gedim\\Documents\\Unreal Projects\\Example\\Source\\Example\\llama.cpp\\build\\CMakeFiles\\CMakeScratch\\TryCompile-rehpi2\\cmTC_18d2d.vcxproj" (Standardziel) (1) ->
+        (Link Ziel) -> 
+          LINK : fatal error LNK1104: cannot open file 'pthread.lib' [C:\\Users\\gedim\\Documents\\Unreal Projects\\Example\\Source\\Example\\llama.cpp\\build\\CMakeFiles\\CMakeScratch\\TryCompile-rehpi2\\cmTC_18d2d.vcxproj]
+        
+            0 Warnung(en)
+            1 Fehler
+        
+        Verstrichene Zeit 00:00:01.75
+        
+      exitCode: 1
+  -
+    kind: "find-v1"
+    backtrace:
+      - "ggml/src/CMakeLists.txt:69 (find_program)"
+    mode: "program"
+    variable: "GGML_CCACHE_FOUND"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "ccache"
+    candidate_directories:
+      - "C:/Windows/System32/"
+      - "C:/Windows/"
+      - "C:/Windows/System32/wbem/"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/"
+      - "C:/Windows/System32/OpenSSH/"
+      - "C:/Program Files/nodejs/"
+      - "C:/Users/gedim/PyCharmMiscProject/.venv/Scripts/"
+      - "C:/Program Files/Git/cmd/"
+      - "C:/Program Files/NVIDIA Corporation/NVIDIA App/NvDLISR/"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/"
+      - "C:/Program Files/dotnet/"
+      - "C:/Program Files/CMake/bin/"
+      - "C:/Users/gedim/AppData/Local/Programs/Python/Launcher/"
+      - "C:/Users/gedim/AppData/Local/Microsoft/WindowsApps/"
+      - "C:/Users/gedim/AppData/Local/Programs/Microsoft VS Code/bin/"
+      - "C:/Users/gedim/AppData/Roaming/npm/"
+      - "C:/Users/gedim/.dotnet/tools/"
+      - "C:/Program Files/bin/"
+      - "C:/Program Files/sbin/"
+      - "C:/Program Files/"
+      - "C:/Program Files (x86)/bin/"
+      - "C:/Program Files (x86)/sbin/"
+      - "C:/Program Files (x86)/"
+      - "C:/Program Files/CMake/bin/"
+      - "C:/Program Files/CMake/sbin/"
+      - "C:/Program Files/CMake/"
+      - "C:/Program Files (x86)/llama.cpp/bin/"
+      - "C:/Program Files (x86)/llama.cpp/sbin/"
+      - "C:/Program Files (x86)/llama.cpp/"
+    searched_directories:
+      - "C:/Windows/System32/ccache.com"
+      - "C:/Windows/System32/ccache.exe"
+      - "C:/Windows/System32/ccache"
+      - "C:/Windows/ccache.com"
+      - "C:/Windows/ccache.exe"
+      - "C:/Windows/ccache"
+      - "C:/Windows/System32/wbem/ccache.com"
+      - "C:/Windows/System32/wbem/ccache.exe"
+      - "C:/Windows/System32/wbem/ccache"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/ccache.com"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/ccache.exe"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/ccache"
+      - "C:/Windows/System32/OpenSSH/ccache.com"
+      - "C:/Windows/System32/OpenSSH/ccache.exe"
+      - "C:/Windows/System32/OpenSSH/ccache"
+      - "C:/Program Files/nodejs/ccache.com"
+      - "C:/Program Files/nodejs/ccache.exe"
+      - "C:/Program Files/nodejs/ccache"
+      - "C:/Users/gedim/PyCharmMiscProject/.venv/Scripts/ccache.com"
+      - "C:/Users/gedim/PyCharmMiscProject/.venv/Scripts/ccache.exe"
+      - "C:/Users/gedim/PyCharmMiscProject/.venv/Scripts/ccache"
+      - "C:/Program Files/Git/cmd/ccache.com"
+      - "C:/Program Files/Git/cmd/ccache.exe"
+      - "C:/Program Files/Git/cmd/ccache"
+      - "C:/Program Files/NVIDIA Corporation/NVIDIA App/NvDLISR/ccache.com"
+      - "C:/Program Files/NVIDIA Corporation/NVIDIA App/NvDLISR/ccache.exe"
+      - "C:/Program Files/NVIDIA Corporation/NVIDIA App/NvDLISR/ccache"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/ccache.com"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/ccache.exe"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/ccache"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/ccache.com"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/ccache.exe"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/ccache"
+      - "C:/Program Files/dotnet/ccache.com"
+      - "C:/Program Files/dotnet/ccache.exe"
+      - "C:/Program Files/dotnet/ccache"
+      - "C:/Program Files/CMake/bin/ccache.com"
+      - "C:/Program Files/CMake/bin/ccache.exe"
+      - "C:/Program Files/CMake/bin/ccache"
+      - "C:/Users/gedim/AppData/Local/Programs/Python/Launcher/ccache.com"
+      - "C:/Users/gedim/AppData/Local/Programs/Python/Launcher/ccache.exe"
+      - "C:/Users/gedim/AppData/Local/Programs/Python/Launcher/ccache"
+      - "C:/Users/gedim/AppData/Local/Microsoft/WindowsApps/ccache.com"
+      - "C:/Users/gedim/AppData/Local/Microsoft/WindowsApps/ccache.exe"
+      - "C:/Users/gedim/AppData/Local/Microsoft/WindowsApps/ccache"
+      - "C:/Users/gedim/AppData/Local/Programs/Microsoft VS Code/bin/ccache.com"
+      - "C:/Users/gedim/AppData/Local/Programs/Microsoft VS Code/bin/ccache.exe"
+      - "C:/Users/gedim/AppData/Local/Programs/Microsoft VS Code/bin/ccache"
+      - "C:/Users/gedim/AppData/Roaming/npm/ccache.com"
+      - "C:/Users/gedim/AppData/Roaming/npm/ccache.exe"
+      - "C:/Users/gedim/AppData/Roaming/npm/ccache"
+      - "C:/Users/gedim/.dotnet/tools/ccache.com"
+      - "C:/Users/gedim/.dotnet/tools/ccache.exe"
+      - "C:/Users/gedim/.dotnet/tools/ccache"
+      - "C:/Program Files/bin/ccache.com"
+      - "C:/Program Files/bin/ccache.exe"
+      - "C:/Program Files/bin/ccache"
+      - "C:/Program Files/sbin/ccache.com"
+      - "C:/Program Files/sbin/ccache.exe"
+      - "C:/Program Files/sbin/ccache"
+      - "C:/Program Files/ccache.com"
+      - "C:/Program Files/ccache.exe"
+      - "C:/Program Files/ccache"
+      - "C:/Program Files (x86)/bin/ccache.com"
+      - "C:/Program Files (x86)/bin/ccache.exe"
+      - "C:/Program Files (x86)/bin/ccache"
+      - "C:/Program Files (x86)/sbin/ccache.com"
+      - "C:/Program Files (x86)/sbin/ccache.exe"
+      - "C:/Program Files (x86)/sbin/ccache"
+      - "C:/Program Files (x86)/ccache.com"
+      - "C:/Program Files (x86)/ccache.exe"
+      - "C:/Program Files (x86)/ccache"
+      - "C:/Program Files/CMake/bin/ccache.com"
+      - "C:/Program Files/CMake/bin/ccache.exe"
+      - "C:/Program Files/CMake/bin/ccache"
+      - "C:/Program Files/CMake/sbin/ccache.com"
+      - "C:/Program Files/CMake/sbin/ccache.exe"
+      - "C:/Program Files/CMake/sbin/ccache"
+      - "C:/Program Files/CMake/ccache.com"
+      - "C:/Program Files/CMake/ccache.exe"
+      - "C:/Program Files/CMake/ccache"
+      - "C:/Program Files (x86)/llama.cpp/bin/ccache.com"
+      - "C:/Program Files (x86)/llama.cpp/bin/ccache.exe"
+      - "C:/Program Files (x86)/llama.cpp/bin/ccache"
+      - "C:/Program Files (x86)/llama.cpp/sbin/ccache.com"
+      - "C:/Program Files (x86)/llama.cpp/sbin/ccache.exe"
+      - "C:/Program Files (x86)/llama.cpp/sbin/ccache"
+      - "C:/Program Files (x86)/llama.cpp/ccache.com"
+      - "C:/Program Files (x86)/llama.cpp/ccache.exe"
+      - "C:/Program Files (x86)/llama.cpp/ccache"
+    found: false
+    search_context:
+      ENV{PATH}:
+        - "C:\\WINDOWS\\system32"
+        - "C:\\WINDOWS"
+        - "C:\\WINDOWS\\System32\\Wbem"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\WINDOWS\\System32\\OpenSSH\\"
+        - "C:\\Program Files\\nodejs\\"
+        - "C:\\Users\\gedim\\PyCharmMiscProject\\.venv\\Scripts"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:\\Program Files\\NVIDIA Corporation\\NVIDIA App\\NvDLISR"
+        - "C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
+        - "C:\\Program Files\\dotnet\\"
+        - "C:\\Program Files\\CMake\\bin"
+        - "C:\\Users\\gedim\\AppData\\Local\\Programs\\Python\\Launcher\\"
+        - "C:\\Users\\gedim\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\Users\\gedim\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
+        - "C:\\Users\\gedim\\AppData\\Roaming\\npm"
+        - "C:\\Users\\gedim\\.dotnet\\tools"
+      CMAKE_INSTALL_PREFIX: "C:/Program Files (x86)/llama.cpp"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "C:/Program Files"
+        - "C:/Program Files (x86)"
+        - "C:/Program Files/CMake"
+        - "C:/Program Files (x86)/llama.cpp"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "ggml/src/CMakeLists.txt:70 (find_program)"
+    mode: "program"
+    variable: "GGML_SCCACHE_FOUND"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "sccache"
+    candidate_directories:
+      - "C:/Windows/System32/"
+      - "C:/Windows/"
+      - "C:/Windows/System32/wbem/"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/"
+      - "C:/Windows/System32/OpenSSH/"
+      - "C:/Program Files/nodejs/"
+      - "C:/Users/gedim/PyCharmMiscProject/.venv/Scripts/"
+      - "C:/Program Files/Git/cmd/"
+      - "C:/Program Files/NVIDIA Corporation/NVIDIA App/NvDLISR/"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/"
+      - "C:/Program Files/dotnet/"
+      - "C:/Program Files/CMake/bin/"
+      - "C:/Users/gedim/AppData/Local/Programs/Python/Launcher/"
+      - "C:/Users/gedim/AppData/Local/Microsoft/WindowsApps/"
+      - "C:/Users/gedim/AppData/Local/Programs/Microsoft VS Code/bin/"
+      - "C:/Users/gedim/AppData/Roaming/npm/"
+      - "C:/Users/gedim/.dotnet/tools/"
+      - "C:/Program Files/bin/"
+      - "C:/Program Files/sbin/"
+      - "C:/Program Files/"
+      - "C:/Program Files (x86)/bin/"
+      - "C:/Program Files (x86)/sbin/"
+      - "C:/Program Files (x86)/"
+      - "C:/Program Files/CMake/bin/"
+      - "C:/Program Files/CMake/sbin/"
+      - "C:/Program Files/CMake/"
+      - "C:/Program Files (x86)/llama.cpp/bin/"
+      - "C:/Program Files (x86)/llama.cpp/sbin/"
+      - "C:/Program Files (x86)/llama.cpp/"
+    searched_directories:
+      - "C:/Windows/System32/sccache.com"
+      - "C:/Windows/System32/sccache.exe"
+      - "C:/Windows/System32/sccache"
+      - "C:/Windows/sccache.com"
+      - "C:/Windows/sccache.exe"
+      - "C:/Windows/sccache"
+      - "C:/Windows/System32/wbem/sccache.com"
+      - "C:/Windows/System32/wbem/sccache.exe"
+      - "C:/Windows/System32/wbem/sccache"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/sccache.com"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/sccache.exe"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/sccache"
+      - "C:/Windows/System32/OpenSSH/sccache.com"
+      - "C:/Windows/System32/OpenSSH/sccache.exe"
+      - "C:/Windows/System32/OpenSSH/sccache"
+      - "C:/Program Files/nodejs/sccache.com"
+      - "C:/Program Files/nodejs/sccache.exe"
+      - "C:/Program Files/nodejs/sccache"
+      - "C:/Users/gedim/PyCharmMiscProject/.venv/Scripts/sccache.com"
+      - "C:/Users/gedim/PyCharmMiscProject/.venv/Scripts/sccache.exe"
+      - "C:/Users/gedim/PyCharmMiscProject/.venv/Scripts/sccache"
+      - "C:/Program Files/Git/cmd/sccache.com"
+      - "C:/Program Files/Git/cmd/sccache.exe"
+      - "C:/Program Files/Git/cmd/sccache"
+      - "C:/Program Files/NVIDIA Corporation/NVIDIA App/NvDLISR/sccache.com"
+      - "C:/Program Files/NVIDIA Corporation/NVIDIA App/NvDLISR/sccache.exe"
+      - "C:/Program Files/NVIDIA Corporation/NVIDIA App/NvDLISR/sccache"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/sccache.com"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/sccache.exe"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/sccache"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/sccache.com"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/sccache.exe"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/sccache"
+      - "C:/Program Files/dotnet/sccache.com"
+      - "C:/Program Files/dotnet/sccache.exe"
+      - "C:/Program Files/dotnet/sccache"
+      - "C:/Program Files/CMake/bin/sccache.com"
+      - "C:/Program Files/CMake/bin/sccache.exe"
+      - "C:/Program Files/CMake/bin/sccache"
+      - "C:/Users/gedim/AppData/Local/Programs/Python/Launcher/sccache.com"
+      - "C:/Users/gedim/AppData/Local/Programs/Python/Launcher/sccache.exe"
+      - "C:/Users/gedim/AppData/Local/Programs/Python/Launcher/sccache"
+      - "C:/Users/gedim/AppData/Local/Microsoft/WindowsApps/sccache.com"
+      - "C:/Users/gedim/AppData/Local/Microsoft/WindowsApps/sccache.exe"
+      - "C:/Users/gedim/AppData/Local/Microsoft/WindowsApps/sccache"
+      - "C:/Users/gedim/AppData/Local/Programs/Microsoft VS Code/bin/sccache.com"
+      - "C:/Users/gedim/AppData/Local/Programs/Microsoft VS Code/bin/sccache.exe"
+      - "C:/Users/gedim/AppData/Local/Programs/Microsoft VS Code/bin/sccache"
+      - "C:/Users/gedim/AppData/Roaming/npm/sccache.com"
+      - "C:/Users/gedim/AppData/Roaming/npm/sccache.exe"
+      - "C:/Users/gedim/AppData/Roaming/npm/sccache"
+      - "C:/Users/gedim/.dotnet/tools/sccache.com"
+      - "C:/Users/gedim/.dotnet/tools/sccache.exe"
+      - "C:/Users/gedim/.dotnet/tools/sccache"
+      - "C:/Program Files/bin/sccache.com"
+      - "C:/Program Files/bin/sccache.exe"
+      - "C:/Program Files/bin/sccache"
+      - "C:/Program Files/sbin/sccache.com"
+      - "C:/Program Files/sbin/sccache.exe"
+      - "C:/Program Files/sbin/sccache"
+      - "C:/Program Files/sccache.com"
+      - "C:/Program Files/sccache.exe"
+      - "C:/Program Files/sccache"
+      - "C:/Program Files (x86)/bin/sccache.com"
+      - "C:/Program Files (x86)/bin/sccache.exe"
+      - "C:/Program Files (x86)/bin/sccache"
+      - "C:/Program Files (x86)/sbin/sccache.com"
+      - "C:/Program Files (x86)/sbin/sccache.exe"
+      - "C:/Program Files (x86)/sbin/sccache"
+      - "C:/Program Files (x86)/sccache.com"
+      - "C:/Program Files (x86)/sccache.exe"
+      - "C:/Program Files (x86)/sccache"
+      - "C:/Program Files/CMake/bin/sccache.com"
+      - "C:/Program Files/CMake/bin/sccache.exe"
+      - "C:/Program Files/CMake/bin/sccache"
+      - "C:/Program Files/CMake/sbin/sccache.com"
+      - "C:/Program Files/CMake/sbin/sccache.exe"
+      - "C:/Program Files/CMake/sbin/sccache"
+      - "C:/Program Files/CMake/sccache.com"
+      - "C:/Program Files/CMake/sccache.exe"
+      - "C:/Program Files/CMake/sccache"
+      - "C:/Program Files (x86)/llama.cpp/bin/sccache.com"
+      - "C:/Program Files (x86)/llama.cpp/bin/sccache.exe"
+      - "C:/Program Files (x86)/llama.cpp/bin/sccache"
+      - "C:/Program Files (x86)/llama.cpp/sbin/sccache.com"
+      - "C:/Program Files (x86)/llama.cpp/sbin/sccache.exe"
+      - "C:/Program Files (x86)/llama.cpp/sbin/sccache"
+      - "C:/Program Files (x86)/llama.cpp/sccache.com"
+      - "C:/Program Files (x86)/llama.cpp/sccache.exe"
+      - "C:/Program Files (x86)/llama.cpp/sccache"
+    found: false
+    search_context:
+      ENV{PATH}:
+        - "C:\\WINDOWS\\system32"
+        - "C:\\WINDOWS"
+        - "C:\\WINDOWS\\System32\\Wbem"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\WINDOWS\\System32\\OpenSSH\\"
+        - "C:\\Program Files\\nodejs\\"
+        - "C:\\Users\\gedim\\PyCharmMiscProject\\.venv\\Scripts"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:\\Program Files\\NVIDIA Corporation\\NVIDIA App\\NvDLISR"
+        - "C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
+        - "C:\\Program Files\\dotnet\\"
+        - "C:\\Program Files\\CMake\\bin"
+        - "C:\\Users\\gedim\\AppData\\Local\\Programs\\Python\\Launcher\\"
+        - "C:\\Users\\gedim\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\Users\\gedim\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
+        - "C:\\Users\\gedim\\AppData\\Roaming\\npm"
+        - "C:\\Users\\gedim\\.dotnet\\tools"
+      CMAKE_INSTALL_PREFIX: "C:/Program Files (x86)/llama.cpp"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "C:/Program Files"
+        - "C:/Program Files (x86)"
+        - "C:/Program Files/CMake"
+        - "C:/Program Files (x86)/llama.cpp"
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/FindOpenMP.cmake:251 (try_compile)"
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/FindOpenMP.cmake:558 (_OPENMP_GET_FLAGS)"
+      - "ggml/src/ggml-cpu/CMakeLists.txt:71 (find_package)"
+      - "ggml/src/CMakeLists.txt:372 (ggml_add_cpu_backend_variant_impl)"
+    description: "Detecting C OpenMP compiler info"
+    directories:
+      source: "C:/Users/gedim/Documents/Unreal Projects/Example/Source/Example/llama.cpp/build/CMakeFiles/CMakeScratch/TryCompile-zs2n79"
+      binary: "C:/Users/gedim/Documents/Unreal Projects/Example/Source/Example/llama.cpp/build/CMakeFiles/CMakeScratch/TryCompile-zs2n79"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS /W3"
+      CMAKE_C_FLAGS_DEBUG: "/MDd /Zi /Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      CMAKE_MODULE_PATH: "C:/Users/gedim/Documents/Unreal Projects/Example/Source/Example/llama.cpp/cmake/"
+      CMAKE_MSVC_RUNTIME_LIBRARY: "MultiThreadedDLL"
+    buildResult:
+      variable: "OpenMP_COMPILE_RESULT_C_openmp"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/gedim/Documents/Unreal Projects/Example/Source/Example/llama.cpp/build/CMakeFiles/CMakeScratch/TryCompile-zs2n79'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_a3f5f.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        MSBuild-Version 17.14.18+a338add32 f├╝r .NET Framework
+        Der Buildvorgang wurde am 19.08.2025 06:15:32 gestartet.
+        
+        Projekt "C:\\Users\\gedim\\Documents\\Unreal Projects\\Example\\Source\\Example\\llama.cpp\\build\\CMakeFiles\\CMakeScratch\\TryCompile-zs2n79\\cmTC_a3f5f.vcxproj" auf Knoten "1" (Standardziele).
+        PrepareForBuild:
+          Das Verzeichnis "cmTC_a3f5f.dir\\Debug\\" wird erstellt.
+          Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
+          Das Verzeichnis "C:\\Users\\gedim\\Documents\\Unreal Projects\\Example\\Source\\Example\\llama.cpp\\build\\CMakeFiles\\CMakeScratch\\TryCompile-zs2n79\\Debug\\" wird erstellt.
+          Das Verzeichnis "cmTC_a3f5f.dir\\Debug\\cmTC_a3f5f.tlog\\" wird erstellt.
+        InitializeBuildStatus:
+          "cmTC_a3f5f.dir\\Debug\\cmTC_a3f5f.tlog\\unsuccessfulbuild" wird erstellt, da "AlwaysCreate" angegeben wurde.
+          Aktualisieren des Timestamps von "cmTC_a3f5f.dir\\Debug\\cmTC_a3f5f.tlog\\unsuccessfulbuild".
+        ClCompile:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\HostX64\\x64\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /openmp /std:c11 /Fo"cmTC_a3f5f.dir\\Debug\\\\" /Fd"cmTC_a3f5f.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Users\\gedim\\Documents\\Unreal Projects\\Example\\Source\\Example\\llama.cpp\\build\\CMakeFiles\\CMakeScratch\\TryCompile-zs2n79\\OpenMPTryFlag.c"
+          Microsoft (R) C/C++ Optimizing Compiler Version 19.38.33145 for x64
+          Copyright (C) Microsoft Corporation.  All rights reserved.
+          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /openmp /std:c11 /Fo"cmTC_a3f5f.dir\\Debug\\\\" /Fd"cmTC_a3f5f.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Users\\gedim\\Documents\\Unreal Projects\\Example\\Source\\Example\\llama.cpp\\build\\CMakeFiles\\CMakeScratch\\TryCompile-zs2n79\\OpenMPTryFlag.c"
+          OpenMPTryFlag.c
+        Link:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\HostX64\\x64\\link.exe /OUT:"C:\\Users\\gedim\\Documents\\Unreal Projects\\Example\\Source\\Example\\llama.cpp\\build\\CMakeFiles\\CMakeScratch\\TryCompile-zs2n79\\Debug\\cmTC_a3f5f.exe" /INCREMENTAL /ILK:"cmTC_a3f5f.dir\\Debug\\cmTC_a3f5f.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/gedim/Documents/Unreal Projects/Example/Source/Example/llama.cpp/build/CMakeFiles/CMakeScratch/TryCompile-zs2n79/Debug/cmTC_a3f5f.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /IMPLIB:"C:/Users/gedim/Documents/Unreal Projects/Example/Source/Example/llama.cpp/build/CMakeFiles/CMakeScratch/TryCompile-zs2n79/Debug/cmTC_a3f5f.lib" /MACHINE:X64  /machine:x64 cmTC_a3f5f.dir\\Debug\\OpenMPTryFlag.obj
+          cmTC_a3f5f.vcxproj -> C:\\Users\\gedim\\Documents\\Unreal Projects\\Example\\Source\\Example\\llama.cpp\\build\\CMakeFiles\\CMakeScratch\\TryCompile-zs2n79\\Debug\\cmTC_a3f5f.exe
+        FinalizeBuildStatus:
+          Die Datei "cmTC_a3f5f.dir\\Debug\\cmTC_a3f5f.tlog\\unsuccessfulbuild" wird gel├Âscht.
+          Aktualisieren des Timestamps von "cmTC_a3f5f.dir\\Debug\\cmTC_a3f5f.tlog\\cmTC_a3f5f.lastbuildstate".
+        Die Erstellung von Projekt "C:\\Users\\gedim\\Documents\\Unreal Projects\\Example\\Source\\Example\\llama.cpp\\build\\CMakeFiles\\CMakeScratch\\TryCompile-zs2n79\\cmTC_a3f5f.vcxproj" ist abgeschlossen (Standardziele).
+        
+        Der Buildvorgang wurde erfolgreich ausgef├╝hrt.
+            0 Warnung(en)
+            0 Fehler
+        
+        Verstrichene Zeit 00:00:02.00
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/FindOpenMP.cmake:251 (try_compile)"
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/FindOpenMP.cmake:558 (_OPENMP_GET_FLAGS)"
+      - "ggml/src/ggml-cpu/CMakeLists.txt:71 (find_package)"
+      - "ggml/src/CMakeLists.txt:372 (ggml_add_cpu_backend_variant_impl)"
+    description: "Detecting CXX OpenMP compiler info"
+    directories:
+      source: "C:/Users/gedim/Documents/Unreal Projects/Example/Source/Example/llama.cpp/build/CMakeFiles/CMakeScratch/TryCompile-egq5ra"
+      binary: "C:/Users/gedim/Documents/Unreal Projects/Example/Source/Example/llama.cpp/build/CMakeFiles/CMakeScratch/TryCompile-egq5ra"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /W3 /GR /EHsc"
+      CMAKE_CXX_FLAGS_DEBUG: "/MDd /Zi /Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      CMAKE_MODULE_PATH: "C:/Users/gedim/Documents/Unreal Projects/Example/Source/Example/llama.cpp/cmake/"
+      CMAKE_MSVC_RUNTIME_LIBRARY: "MultiThreadedDLL"
+    buildResult:
+      variable: "OpenMP_COMPILE_RESULT_CXX_openmp"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/gedim/Documents/Unreal Projects/Example/Source/Example/llama.cpp/build/CMakeFiles/CMakeScratch/TryCompile-egq5ra'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_ea700.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        MSBuild-Version 17.14.18+a338add32 f├╝r .NET Framework
+        Der Buildvorgang wurde am 19.08.2025 06:15:35 gestartet.
+        
+        Projekt "C:\\Users\\gedim\\Documents\\Unreal Projects\\Example\\Source\\Example\\llama.cpp\\build\\CMakeFiles\\CMakeScratch\\TryCompile-egq5ra\\cmTC_ea700.vcxproj" auf Knoten "1" (Standardziele).
+        PrepareForBuild:
+          Das Verzeichnis "cmTC_ea700.dir\\Debug\\" wird erstellt.
+          Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
+          Das Verzeichnis "C:\\Users\\gedim\\Documents\\Unreal Projects\\Example\\Source\\Example\\llama.cpp\\build\\CMakeFiles\\CMakeScratch\\TryCompile-egq5ra\\Debug\\" wird erstellt.
+          Das Verzeichnis "cmTC_ea700.dir\\Debug\\cmTC_ea700.tlog\\" wird erstellt.
+        InitializeBuildStatus:
+          "cmTC_ea700.dir\\Debug\\cmTC_ea700.tlog\\unsuccessfulbuild" wird erstellt, da "AlwaysCreate" angegeben wurde.
+          Aktualisieren des Timestamps von "cmTC_ea700.dir\\Debug\\cmTC_ea700.tlog\\unsuccessfulbuild".
+        ClCompile:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\HostX64\\x64\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GS /fp:precise /GR /openmp /std:c++17 /Fo"cmTC_ea700.dir\\Debug\\\\" /Fd"cmTC_ea700.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TP /errorReport:queue "C:\\Users\\gedim\\Documents\\Unreal Projects\\Example\\Source\\Example\\llama.cpp\\build\\CMakeFiles\\CMakeScratch\\TryCompile-egq5ra\\OpenMPTryFlag.cpp"
+          Microsoft (R) C/C++ Optimizing Compiler Version 19.38.33145 for x64
+          Copyright (C) Microsoft Corporation.  All rights reserved.
+          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GS /fp:precise /GR /openmp /std:c++17 /Fo"cmTC_ea700.dir\\Debug\\\\" /Fd"cmTC_ea700.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TP /errorReport:queue "C:\\Users\\gedim\\Documents\\Unreal Projects\\Example\\Source\\Example\\llama.cpp\\build\\CMakeFiles\\CMakeScratch\\TryCompile-egq5ra\\OpenMPTryFlag.cpp"
+          OpenMPTryFlag.cpp
+        Link:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\HostX64\\x64\\link.exe /OUT:"C:\\Users\\gedim\\Documents\\Unreal Projects\\Example\\Source\\Example\\llama.cpp\\build\\CMakeFiles\\CMakeScratch\\TryCompile-egq5ra\\Debug\\cmTC_ea700.exe" /INCREMENTAL /ILK:"cmTC_ea700.dir\\Debug\\cmTC_ea700.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/gedim/Documents/Unreal Projects/Example/Source/Example/llama.cpp/build/CMakeFiles/CMakeScratch/TryCompile-egq5ra/Debug/cmTC_ea700.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /IMPLIB:"C:/Users/gedim/Documents/Unreal Projects/Example/Source/Example/llama.cpp/build/CMakeFiles/CMakeScratch/TryCompile-egq5ra/Debug/cmTC_ea700.lib" /MACHINE:X64  /machine:x64 cmTC_ea700.dir\\Debug\\OpenMPTryFlag.obj
+          cmTC_ea700.vcxproj -> C:\\Users\\gedim\\Documents\\Unreal Projects\\Example\\Source\\Example\\llama.cpp\\build\\CMakeFiles\\CMakeScratch\\TryCompile-egq5ra\\Debug\\cmTC_ea700.exe
+        FinalizeBuildStatus:
+          Die Datei "cmTC_ea700.dir\\Debug\\cmTC_ea700.tlog\\unsuccessfulbuild" wird gel├Âscht.
+          Aktualisieren des Timestamps von "cmTC_ea700.dir\\Debug\\cmTC_ea700.tlog\\cmTC_ea700.lastbuildstate".
+        Die Erstellung von Projekt "C:\\Users\\gedim\\Documents\\Unreal Projects\\Example\\Source\\Example\\llama.cpp\\build\\CMakeFiles\\CMakeScratch\\TryCompile-egq5ra\\cmTC_ea700.vcxproj" ist abgeschlossen (Standardziele).
+        
+        Der Buildvorgang wurde erfolgreich ausgef├╝hrt.
+            0 Warnung(en)
+            0 Fehler
+        
+        Verstrichene Zeit 00:00:01.87
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/FindOpenMP.cmake:492 (try_compile)"
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/FindOpenMP.cmake:632 (_OPENMP_GET_SPEC_DATE)"
+      - "ggml/src/ggml-cpu/CMakeLists.txt:71 (find_package)"
+      - "ggml/src/CMakeLists.txt:372 (ggml_add_cpu_backend_variant_impl)"
+    description: "Detecting C OpenMP version"
+    directories:
+      source: "C:/Users/gedim/Documents/Unreal Projects/Example/Source/Example/llama.cpp/build/CMakeFiles/CMakeScratch/TryCompile-5376w1"
+      binary: "C:/Users/gedim/Documents/Unreal Projects/Example/Source/Example/llama.cpp/build/CMakeFiles/CMakeScratch/TryCompile-5376w1"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS /W3"
+      CMAKE_C_FLAGS_DEBUG: "/MDd /Zi /Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      CMAKE_MODULE_PATH: "C:/Users/gedim/Documents/Unreal Projects/Example/Source/Example/llama.cpp/cmake/"
+      CMAKE_MSVC_RUNTIME_LIBRARY: "MultiThreadedDLL"
+    buildResult:
+      variable: "OpenMP_SPECTEST_C_"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/gedim/Documents/Unreal Projects/Example/Source/Example/llama.cpp/build/CMakeFiles/CMakeScratch/TryCompile-5376w1'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_3e7f0.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        MSBuild-Version 17.14.18+a338add32 f├╝r .NET Framework
+        Der Buildvorgang wurde am 19.08.2025 06:15:38 gestartet.
+        
+        Projekt "C:\\Users\\gedim\\Documents\\Unreal Projects\\Example\\Source\\Example\\llama.cpp\\build\\CMakeFiles\\CMakeScratch\\TryCompile-5376w1\\cmTC_3e7f0.vcxproj" auf Knoten "1" (Standardziele).
+        PrepareForBuild:
+          Das Verzeichnis "cmTC_3e7f0.dir\\Debug\\" wird erstellt.
+          Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
+          Das Verzeichnis "C:\\Users\\gedim\\Documents\\Unreal Projects\\Example\\Source\\Example\\llama.cpp\\build\\CMakeFiles\\CMakeScratch\\TryCompile-5376w1\\Debug\\" wird erstellt.
+          Das Verzeichnis "cmTC_3e7f0.dir\\Debug\\cmTC_3e7f0.tlog\\" wird erstellt.
+        InitializeBuildStatus:
+          "cmTC_3e7f0.dir\\Debug\\cmTC_3e7f0.tlog\\unsuccessfulbuild" wird erstellt, da "AlwaysCreate" angegeben wurde.
+          Aktualisieren des Timestamps von "cmTC_3e7f0.dir\\Debug\\cmTC_3e7f0.tlog\\unsuccessfulbuild".
+        ClCompile:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\HostX64\\x64\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /openmp /std:c11 /Fo"cmTC_3e7f0.dir\\Debug\\\\" /Fd"cmTC_3e7f0.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Users\\gedim\\Documents\\Unreal Projects\\Example\\Source\\Example\\llama.cpp\\build\\CMakeFiles\\CMakeScratch\\TryCompile-5376w1\\OpenMPCheckVersion.c"
+          Microsoft (R) C/C++ Optimizing Compiler Version 19.38.33145 for x64
+          Copyright (C) Microsoft Corporation.  All rights reserved.
+          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /openmp /std:c11 /Fo"cmTC_3e7f0.dir\\Debug\\\\" /Fd"cmTC_3e7f0.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Users\\gedim\\Documents\\Unreal Projects\\Example\\Source\\Example\\llama.cpp\\build\\CMakeFiles\\CMakeScratch\\TryCompile-5376w1\\OpenMPCheckVersion.c"
+          OpenMPCheckVersion.c
+        Link:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\HostX64\\x64\\link.exe /OUT:"C:\\Users\\gedim\\Documents\\Unreal Projects\\Example\\Source\\Example\\llama.cpp\\build\\CMakeFiles\\CMakeScratch\\TryCompile-5376w1\\Debug\\cmTC_3e7f0.exe" /INCREMENTAL /ILK:"cmTC_3e7f0.dir\\Debug\\cmTC_3e7f0.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/gedim/Documents/Unreal Projects/Example/Source/Example/llama.cpp/build/CMakeFiles/CMakeScratch/TryCompile-5376w1/Debug/cmTC_3e7f0.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /IMPLIB:"C:/Users/gedim/Documents/Unreal Projects/Example/Source/Example/llama.cpp/build/CMakeFiles/CMakeScratch/TryCompile-5376w1/Debug/cmTC_3e7f0.lib" /MACHINE:X64  /machine:x64 cmTC_3e7f0.dir\\Debug\\OpenMPCheckVersion.obj
+          cmTC_3e7f0.vcxproj -> C:\\Users\\gedim\\Documents\\Unreal Projects\\Example\\Source\\Example\\llama.cpp\\build\\CMakeFiles\\CMakeScratch\\TryCompile-5376w1\\Debug\\cmTC_3e7f0.exe
+        FinalizeBuildStatus:
+          Die Datei "cmTC_3e7f0.dir\\Debug\\cmTC_3e7f0.tlog\\unsuccessfulbuild" wird gel├Âscht.
+          Aktualisieren des Timestamps von "cmTC_3e7f0.dir\\Debug\\cmTC_3e7f0.tlog\\cmTC_3e7f0.lastbuildstate".
+        Die Erstellung von Projekt "C:\\Users\\gedim\\Documents\\Unreal Projects\\Example\\Source\\Example\\llama.cpp\\build\\CMakeFiles\\CMakeScratch\\TryCompile-5376w1\\cmTC_3e7f0.vcxproj" ist abgeschlossen (Standardziele).
+        
+        Der Buildvorgang wurde erfolgreich ausgef├╝hrt.
+            0 Warnung(en)
+            0 Fehler
+        
+        Verstrichene Zeit 00:00:01.81
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/FindOpenMP.cmake:492 (try_compile)"
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/FindOpenMP.cmake:632 (_OPENMP_GET_SPEC_DATE)"
+      - "ggml/src/ggml-cpu/CMakeLists.txt:71 (find_package)"
+      - "ggml/src/CMakeLists.txt:372 (ggml_add_cpu_backend_variant_impl)"
+    description: "Detecting CXX OpenMP version"
+    directories:
+      source: "C:/Users/gedim/Documents/Unreal Projects/Example/Source/Example/llama.cpp/build/CMakeFiles/CMakeScratch/TryCompile-9dcbjm"
+      binary: "C:/Users/gedim/Documents/Unreal Projects/Example/Source/Example/llama.cpp/build/CMakeFiles/CMakeScratch/TryCompile-9dcbjm"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /W3 /GR /EHsc"
+      CMAKE_CXX_FLAGS_DEBUG: "/MDd /Zi /Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      CMAKE_MODULE_PATH: "C:/Users/gedim/Documents/Unreal Projects/Example/Source/Example/llama.cpp/cmake/"
+      CMAKE_MSVC_RUNTIME_LIBRARY: "MultiThreadedDLL"
+    buildResult:
+      variable: "OpenMP_SPECTEST_CXX_"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/gedim/Documents/Unreal Projects/Example/Source/Example/llama.cpp/build/CMakeFiles/CMakeScratch/TryCompile-9dcbjm'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_f2195.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        MSBuild-Version 17.14.18+a338add32 f├╝r .NET Framework
+        Der Buildvorgang wurde am 19.08.2025 06:15:40 gestartet.
+        
+        Projekt "C:\\Users\\gedim\\Documents\\Unreal Projects\\Example\\Source\\Example\\llama.cpp\\build\\CMakeFiles\\CMakeScratch\\TryCompile-9dcbjm\\cmTC_f2195.vcxproj" auf Knoten "1" (Standardziele).
+        PrepareForBuild:
+          Das Verzeichnis "cmTC_f2195.dir\\Debug\\" wird erstellt.
+          Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
+          Das Verzeichnis "C:\\Users\\gedim\\Documents\\Unreal Projects\\Example\\Source\\Example\\llama.cpp\\build\\CMakeFiles\\CMakeScratch\\TryCompile-9dcbjm\\Debug\\" wird erstellt.
+          Das Verzeichnis "cmTC_f2195.dir\\Debug\\cmTC_f2195.tlog\\" wird erstellt.
+        InitializeBuildStatus:
+          "cmTC_f2195.dir\\Debug\\cmTC_f2195.tlog\\unsuccessfulbuild" wird erstellt, da "AlwaysCreate" angegeben wurde.
+          Aktualisieren des Timestamps von "cmTC_f2195.dir\\Debug\\cmTC_f2195.tlog\\unsuccessfulbuild".
+        ClCompile:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\HostX64\\x64\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GS /fp:precise /GR /openmp /std:c++17 /Fo"cmTC_f2195.dir\\Debug\\\\" /Fd"cmTC_f2195.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TP /errorReport:queue "C:\\Users\\gedim\\Documents\\Unreal Projects\\Example\\Source\\Example\\llama.cpp\\build\\CMakeFiles\\CMakeScratch\\TryCompile-9dcbjm\\OpenMPCheckVersion.cpp"
+          Microsoft (R) C/C++ Optimizing Compiler Version 19.38.33145 for x64
+          Copyright (C) Microsoft Corporation.  All rights reserved.
+          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GS /fp:precise /GR /openmp /std:c++17 /Fo"cmTC_f2195.dir\\Debug\\\\" /Fd"cmTC_f2195.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TP /errorReport:queue "C:\\Users\\gedim\\Documents\\Unreal Projects\\Example\\Source\\Example\\llama.cpp\\build\\CMakeFiles\\CMakeScratch\\TryCompile-9dcbjm\\OpenMPCheckVersion.cpp"
+          OpenMPCheckVersion.cpp
+        Link:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\HostX64\\x64\\link.exe /OUT:"C:\\Users\\gedim\\Documents\\Unreal Projects\\Example\\Source\\Example\\llama.cpp\\build\\CMakeFiles\\CMakeScratch\\TryCompile-9dcbjm\\Debug\\cmTC_f2195.exe" /INCREMENTAL /ILK:"cmTC_f2195.dir\\Debug\\cmTC_f2195.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/gedim/Documents/Unreal Projects/Example/Source/Example/llama.cpp/build/CMakeFiles/CMakeScratch/TryCompile-9dcbjm/Debug/cmTC_f2195.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /IMPLIB:"C:/Users/gedim/Documents/Unreal Projects/Example/Source/Example/llama.cpp/build/CMakeFiles/CMakeScratch/TryCompile-9dcbjm/Debug/cmTC_f2195.lib" /MACHINE:X64  /machine:x64 cmTC_f2195.dir\\Debug\\OpenMPCheckVersion.obj
+          cmTC_f2195.vcxproj -> C:\\Users\\gedim\\Documents\\Unreal Projects\\Example\\Source\\Example\\llama.cpp\\build\\CMakeFiles\\CMakeScratch\\TryCompile-9dcbjm\\Debug\\cmTC_f2195.exe
+        FinalizeBuildStatus:
+          Die Datei "cmTC_f2195.dir\\Debug\\cmTC_f2195.tlog\\unsuccessfulbuild" wird gel├Âscht.
+          Aktualisieren des Timestamps von "cmTC_f2195.dir\\Debug\\cmTC_f2195.tlog\\cmTC_f2195.lastbuildstate".
+        Die Erstellung von Projekt "C:\\Users\\gedim\\Documents\\Unreal Projects\\Example\\Source\\Example\\llama.cpp\\build\\CMakeFiles\\CMakeScratch\\TryCompile-9dcbjm\\cmTC_f2195.vcxproj" ist abgeschlossen (Standardziele).
+        
+        Der Buildvorgang wurde erfolgreich ausgef├╝hrt.
+            0 Warnung(en)
+            0 Fehler
+        
+        Verstrichene Zeit 00:00:01.69
+        
+      exitCode: 0
+  -
+    kind: "try_run-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/Internal/CheckSourceRuns.cmake:95 (try_run)"
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CheckCSourceRuns.cmake:88 (cmake_check_source_runs)"
+      - "ggml/src/ggml-cpu/cmake/FindSIMD.cmake:61 (check_c_source_runs)"
+      - "ggml/src/ggml-cpu/cmake/FindSIMD.cmake:80 (check_sse)"
+      - "ggml/src/ggml-cpu/CMakeLists.txt:242 (include)"
+      - "ggml/src/CMakeLists.txt:372 (ggml_add_cpu_backend_variant_impl)"
+    checks:
+      - "Performing Test HAS_AVX_1"
+    directories:
+      source: "C:/Users/gedim/Documents/Unreal Projects/Example/Source/Example/llama.cpp/build/CMakeFiles/CMakeScratch/TryCompile-fiqyde"
+      binary: "C:/Users/gedim/Documents/Unreal Projects/Example/Source/Example/llama.cpp/build/CMakeFiles/CMakeScratch/TryCompile-fiqyde"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS /W3"
+      CMAKE_C_FLAGS_DEBUG: "/MDd /Zi /Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      CMAKE_MODULE_PATH: "C:/Users/gedim/Documents/Unreal Projects/Example/Source/Example/llama.cpp/cmake/"
+      CMAKE_MSVC_RUNTIME_LIBRARY: "MultiThreadedDLL"
+    buildResult:
+      variable: "HAS_AVX_1_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/gedim/Documents/Unreal Projects/Example/Source/Example/llama.cpp/build/CMakeFiles/CMakeScratch/TryCompile-fiqyde'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_00a37.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        MSBuild-Version 17.14.18+a338add32 f├╝r .NET Framework
+        Der Buildvorgang wurde am 19.08.2025 06:15:43 gestartet.
+        
+        Projekt "C:\\Users\\gedim\\Documents\\Unreal Projects\\Example\\Source\\Example\\llama.cpp\\build\\CMakeFiles\\CMakeScratch\\TryCompile-fiqyde\\cmTC_00a37.vcxproj" auf Knoten "1" (Standardziele).
+        PrepareForBuild:
+          Das Verzeichnis "cmTC_00a37.dir\\Debug\\" wird erstellt.
+          Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
+          Das Verzeichnis "C:\\Users\\gedim\\Documents\\Unreal Projects\\Example\\Source\\Example\\llama.cpp\\build\\CMakeFiles\\CMakeScratch\\TryCompile-fiqyde\\Debug\\" wird erstellt.
+          Das Verzeichnis "cmTC_00a37.dir\\Debug\\cmTC_00a37.tlog\\" wird erstellt.
+        InitializeBuildStatus:
+          "cmTC_00a37.dir\\Debug\\cmTC_00a37.tlog\\unsuccessfulbuild" wird erstellt, da "AlwaysCreate" angegeben wurde.
+          Aktualisieren des Timestamps von "cmTC_00a37.dir\\Debug\\cmTC_00a37.tlog\\unsuccessfulbuild".
+        ClCompile:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\HostX64\\x64\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D HAS_AVX_1 /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /std:c11 /Fo"cmTC_00a37.dir\\Debug\\\\" /Fd"cmTC_00a37.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Users\\gedim\\Documents\\Unreal Projects\\Example\\Source\\Example\\llama.cpp\\build\\CMakeFiles\\CMakeScratch\\TryCompile-fiqyde\\src.c"
+          Microsoft (R) C/C++ Optimizing Compiler Version 19.38.33145 for x64
+          Copyright (C) Microsoft Corporation.  All rights reserved.
+          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D HAS_AVX_1 /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /std:c11 /Fo"cmTC_00a37.dir\\Debug\\\\" /Fd"cmTC_00a37.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Users\\gedim\\Documents\\Unreal Projects\\Example\\Source\\Example\\llama.cpp\\build\\CMakeFiles\\CMakeScratch\\TryCompile-fiqyde\\src.c"
+          src.c
+        Link:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\HostX64\\x64\\link.exe /OUT:"C:\\Users\\gedim\\Documents\\Unreal Projects\\Example\\Source\\Example\\llama.cpp\\build\\CMakeFiles\\CMakeScratch\\TryCompile-fiqyde\\Debug\\cmTC_00a37.exe" /INCREMENTAL /ILK:"cmTC_00a37.dir\\Debug\\cmTC_00a37.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/gedim/Documents/Unreal Projects/Example/Source/Example/llama.cpp/build/CMakeFiles/CMakeScratch/TryCompile-fiqyde/Debug/cmTC_00a37.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /IMPLIB:"C:/Users/gedim/Documents/Unreal Projects/Example/Source/Example/llama.cpp/build/CMakeFiles/CMakeScratch/TryCompile-fiqyde/Debug/cmTC_00a37.lib" /MACHINE:X64  /machine:x64 cmTC_00a37.dir\\Debug\\src.obj
+          cmTC_00a37.vcxproj -> C:\\Users\\gedim\\Documents\\Unreal Projects\\Example\\Source\\Example\\llama.cpp\\build\\CMakeFiles\\CMakeScratch\\TryCompile-fiqyde\\Debug\\cmTC_00a37.exe
+        FinalizeBuildStatus:
+          Die Datei "cmTC_00a37.dir\\Debug\\cmTC_00a37.tlog\\unsuccessfulbuild" wird gel├Âscht.
+          Aktualisieren des Timestamps von "cmTC_00a37.dir\\Debug\\cmTC_00a37.tlog\\cmTC_00a37.lastbuildstate".
+        Die Erstellung von Projekt "C:\\Users\\gedim\\Documents\\Unreal Projects\\Example\\Source\\Example\\llama.cpp\\build\\CMakeFiles\\CMakeScratch\\TryCompile-fiqyde\\cmTC_00a37.vcxproj" ist abgeschlossen (Standardziele).
+        
+        Der Buildvorgang wurde erfolgreich ausgef├╝hrt.
+            0 Warnung(en)
+            0 Fehler
+        
+        Verstrichene Zeit 00:00:01.81
+        
+      exitCode: 0
+    runResult:
+      variable: "HAS_AVX_1_EXITCODE"
+      cached: true
+      stdout: |
+      stderr: |
+      exitCode: 0
+  -
+    kind: "try_run-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/Internal/CheckSourceRuns.cmake:95 (try_run)"
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CheckCSourceRuns.cmake:88 (cmake_check_source_runs)"
+      - "ggml/src/ggml-cpu/cmake/FindSIMD.cmake:61 (check_c_source_runs)"
+      - "ggml/src/ggml-cpu/cmake/FindSIMD.cmake:87 (check_sse)"
+      - "ggml/src/ggml-cpu/CMakeLists.txt:242 (include)"
+      - "ggml/src/CMakeLists.txt:372 (ggml_add_cpu_backend_variant_impl)"
+    checks:
+      - "Performing Test HAS_AVX2_1"
+    directories:
+      source: "C:/Users/gedim/Documents/Unreal Projects/Example/Source/Example/llama.cpp/build/CMakeFiles/CMakeScratch/TryCompile-mvbva9"
+      binary: "C:/Users/gedim/Documents/Unreal Projects/Example/Source/Example/llama.cpp/build/CMakeFiles/CMakeScratch/TryCompile-mvbva9"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS /W3"
+      CMAKE_C_FLAGS_DEBUG: "/MDd /Zi /Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      CMAKE_MODULE_PATH: "C:/Users/gedim/Documents/Unreal Projects/Example/Source/Example/llama.cpp/cmake/"
+      CMAKE_MSVC_RUNTIME_LIBRARY: "MultiThreadedDLL"
+    buildResult:
+      variable: "HAS_AVX2_1_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/gedim/Documents/Unreal Projects/Example/Source/Example/llama.cpp/build/CMakeFiles/CMakeScratch/TryCompile-mvbva9'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_d32f8.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        MSBuild-Version 17.14.18+a338add32 f├╝r .NET Framework
+        Der Buildvorgang wurde am 19.08.2025 06:15:45 gestartet.
+        
+        Projekt "C:\\Users\\gedim\\Documents\\Unreal Projects\\Example\\Source\\Example\\llama.cpp\\build\\CMakeFiles\\CMakeScratch\\TryCompile-mvbva9\\cmTC_d32f8.vcxproj" auf Knoten "1" (Standardziele).
+        PrepareForBuild:
+          Das Verzeichnis "cmTC_d32f8.dir\\Debug\\" wird erstellt.
+          Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
+          Das Verzeichnis "C:\\Users\\gedim\\Documents\\Unreal Projects\\Example\\Source\\Example\\llama.cpp\\build\\CMakeFiles\\CMakeScratch\\TryCompile-mvbva9\\Debug\\" wird erstellt.
+          Das Verzeichnis "cmTC_d32f8.dir\\Debug\\cmTC_d32f8.tlog\\" wird erstellt.
+        InitializeBuildStatus:
+          "cmTC_d32f8.dir\\Debug\\cmTC_d32f8.tlog\\unsuccessfulbuild" wird erstellt, da "AlwaysCreate" angegeben wurde.
+          Aktualisieren des Timestamps von "cmTC_d32f8.dir\\Debug\\cmTC_d32f8.tlog\\unsuccessfulbuild".
+        ClCompile:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\HostX64\\x64\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D HAS_AVX2_1 /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /std:c11 /Fo"cmTC_d32f8.dir\\Debug\\\\" /Fd"cmTC_d32f8.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Users\\gedim\\Documents\\Unreal Projects\\Example\\Source\\Example\\llama.cpp\\build\\CMakeFiles\\CMakeScratch\\TryCompile-mvbva9\\src.c"
+          Microsoft (R) C/C++ Optimizing Compiler Version 19.38.33145 for x64
+          Copyright (C) Microsoft Corporation.  All rights reserved.
+          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D HAS_AVX2_1 /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /std:c11 /Fo"cmTC_d32f8.dir\\Debug\\\\" /Fd"cmTC_d32f8.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Users\\gedim\\Documents\\Unreal Projects\\Example\\Source\\Example\\llama.cpp\\build\\CMakeFiles\\CMakeScratch\\TryCompile-mvbva9\\src.c"
+          src.c
+        Link:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\HostX64\\x64\\link.exe /OUT:"C:\\Users\\gedim\\Documents\\Unreal Projects\\Example\\Source\\Example\\llama.cpp\\build\\CMakeFiles\\CMakeScratch\\TryCompile-mvbva9\\Debug\\cmTC_d32f8.exe" /INCREMENTAL /ILK:"cmTC_d32f8.dir\\Debug\\cmTC_d32f8.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/gedim/Documents/Unreal Projects/Example/Source/Example/llama.cpp/build/CMakeFiles/CMakeScratch/TryCompile-mvbva9/Debug/cmTC_d32f8.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /IMPLIB:"C:/Users/gedim/Documents/Unreal Projects/Example/Source/Example/llama.cpp/build/CMakeFiles/CMakeScratch/TryCompile-mvbva9/Debug/cmTC_d32f8.lib" /MACHINE:X64  /machine:x64 cmTC_d32f8.dir\\Debug\\src.obj
+          cmTC_d32f8.vcxproj -> C:\\Users\\gedim\\Documents\\Unreal Projects\\Example\\Source\\Example\\llama.cpp\\build\\CMakeFiles\\CMakeScratch\\TryCompile-mvbva9\\Debug\\cmTC_d32f8.exe
+        FinalizeBuildStatus:
+          Die Datei "cmTC_d32f8.dir\\Debug\\cmTC_d32f8.tlog\\unsuccessfulbuild" wird gel├Âscht.
+          Aktualisieren des Timestamps von "cmTC_d32f8.dir\\Debug\\cmTC_d32f8.tlog\\cmTC_d32f8.lastbuildstate".
+        Die Erstellung von Projekt "C:\\Users\\gedim\\Documents\\Unreal Projects\\Example\\Source\\Example\\llama.cpp\\build\\CMakeFiles\\CMakeScratch\\TryCompile-mvbva9\\cmTC_d32f8.vcxproj" ist abgeschlossen (Standardziele).
+        
+        Der Buildvorgang wurde erfolgreich ausgef├╝hrt.
+            0 Warnung(en)
+            0 Fehler
+        
+        Verstrichene Zeit 00:00:01.62
+        
+      exitCode: 0
+    runResult:
+      variable: "HAS_AVX2_1_EXITCODE"
+      cached: true
+      stdout: |
+      stderr: |
+      exitCode: 0
+  -
+    kind: "try_run-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/Internal/CheckSourceRuns.cmake:95 (try_run)"
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CheckCSourceRuns.cmake:88 (cmake_check_source_runs)"
+      - "ggml/src/ggml-cpu/cmake/FindSIMD.cmake:61 (check_c_source_runs)"
+      - "ggml/src/ggml-cpu/cmake/FindSIMD.cmake:88 (check_sse)"
+      - "ggml/src/ggml-cpu/CMakeLists.txt:242 (include)"
+      - "ggml/src/CMakeLists.txt:372 (ggml_add_cpu_backend_variant_impl)"
+    checks:
+      - "Performing Test HAS_FMA_1"
+    directories:
+      source: "C:/Users/gedim/Documents/Unreal Projects/Example/Source/Example/llama.cpp/build/CMakeFiles/CMakeScratch/TryCompile-b28v6i"
+      binary: "C:/Users/gedim/Documents/Unreal Projects/Example/Source/Example/llama.cpp/build/CMakeFiles/CMakeScratch/TryCompile-b28v6i"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS /W3"
+      CMAKE_C_FLAGS_DEBUG: "/MDd /Zi /Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      CMAKE_MODULE_PATH: "C:/Users/gedim/Documents/Unreal Projects/Example/Source/Example/llama.cpp/cmake/"
+      CMAKE_MSVC_RUNTIME_LIBRARY: "MultiThreadedDLL"
+    buildResult:
+      variable: "HAS_FMA_1_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/gedim/Documents/Unreal Projects/Example/Source/Example/llama.cpp/build/CMakeFiles/CMakeScratch/TryCompile-b28v6i'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_28015.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        MSBuild-Version 17.14.18+a338add32 f├╝r .NET Framework
+        Der Buildvorgang wurde am 19.08.2025 06:15:47 gestartet.
+        
+        Projekt "C:\\Users\\gedim\\Documents\\Unreal Projects\\Example\\Source\\Example\\llama.cpp\\build\\CMakeFiles\\CMakeScratch\\TryCompile-b28v6i\\cmTC_28015.vcxproj" auf Knoten "1" (Standardziele).
+        PrepareForBuild:
+          Das Verzeichnis "cmTC_28015.dir\\Debug\\" wird erstellt.
+          Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
+          Das Verzeichnis "C:\\Users\\gedim\\Documents\\Unreal Projects\\Example\\Source\\Example\\llama.cpp\\build\\CMakeFiles\\CMakeScratch\\TryCompile-b28v6i\\Debug\\" wird erstellt.
+          Das Verzeichnis "cmTC_28015.dir\\Debug\\cmTC_28015.tlog\\" wird erstellt.
+        InitializeBuildStatus:
+          "cmTC_28015.dir\\Debug\\cmTC_28015.tlog\\unsuccessfulbuild" wird erstellt, da "AlwaysCreate" angegeben wurde.
+          Aktualisieren des Timestamps von "cmTC_28015.dir\\Debug\\cmTC_28015.tlog\\unsuccessfulbuild".
+        ClCompile:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\HostX64\\x64\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D HAS_FMA_1 /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /std:c11 /Fo"cmTC_28015.dir\\Debug\\\\" /Fd"cmTC_28015.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Users\\gedim\\Documents\\Unreal Projects\\Example\\Source\\Example\\llama.cpp\\build\\CMakeFiles\\CMakeScratch\\TryCompile-b28v6i\\src.c"
+          Microsoft (R) C/C++ Optimizing Compiler Version 19.38.33145 for x64
+          Copyright (C) Microsoft Corporation.  All rights reserved.
+          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D HAS_FMA_1 /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /std:c11 /Fo"cmTC_28015.dir\\Debug\\\\" /Fd"cmTC_28015.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Users\\gedim\\Documents\\Unreal Projects\\Example\\Source\\Example\\llama.cpp\\build\\CMakeFiles\\CMakeScratch\\TryCompile-b28v6i\\src.c"
+          src.c
+        Link:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\HostX64\\x64\\link.exe /OUT:"C:\\Users\\gedim\\Documents\\Unreal Projects\\Example\\Source\\Example\\llama.cpp\\build\\CMakeFiles\\CMakeScratch\\TryCompile-b28v6i\\Debug\\cmTC_28015.exe" /INCREMENTAL /ILK:"cmTC_28015.dir\\Debug\\cmTC_28015.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/gedim/Documents/Unreal Projects/Example/Source/Example/llama.cpp/build/CMakeFiles/CMakeScratch/TryCompile-b28v6i/Debug/cmTC_28015.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /IMPLIB:"C:/Users/gedim/Documents/Unreal Projects/Example/Source/Example/llama.cpp/build/CMakeFiles/CMakeScratch/TryCompile-b28v6i/Debug/cmTC_28015.lib" /MACHINE:X64  /machine:x64 cmTC_28015.dir\\Debug\\src.obj
+          cmTC_28015.vcxproj -> C:\\Users\\gedim\\Documents\\Unreal Projects\\Example\\Source\\Example\\llama.cpp\\build\\CMakeFiles\\CMakeScratch\\TryCompile-b28v6i\\Debug\\cmTC_28015.exe
+        FinalizeBuildStatus:
+          Die Datei "cmTC_28015.dir\\Debug\\cmTC_28015.tlog\\unsuccessfulbuild" wird gel├Âscht.
+          Aktualisieren des Timestamps von "cmTC_28015.dir\\Debug\\cmTC_28015.tlog\\cmTC_28015.lastbuildstate".
+        Die Erstellung von Projekt "C:\\Users\\gedim\\Documents\\Unreal Projects\\Example\\Source\\Example\\llama.cpp\\build\\CMakeFiles\\CMakeScratch\\TryCompile-b28v6i\\cmTC_28015.vcxproj" ist abgeschlossen (Standardziele).
+        
+        Der Buildvorgang wurde erfolgreich ausgef├╝hrt.
+            0 Warnung(en)
+            0 Fehler
+        
+        Verstrichene Zeit 00:00:01.98
+        
+      exitCode: 0
+    runResult:
+      variable: "HAS_FMA_1_EXITCODE"
+      cached: true
+      stdout: |
+      stderr: |
+      exitCode: 0
+  -
+    kind: "try_run-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/Internal/CheckSourceRuns.cmake:95 (try_run)"
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CheckCSourceRuns.cmake:88 (cmake_check_source_runs)"
+      - "ggml/src/ggml-cpu/cmake/FindSIMD.cmake:61 (check_c_source_runs)"
+      - "ggml/src/ggml-cpu/cmake/FindSIMD.cmake:95 (check_sse)"
+      - "ggml/src/ggml-cpu/CMakeLists.txt:242 (include)"
+      - "ggml/src/CMakeLists.txt:372 (ggml_add_cpu_backend_variant_impl)"
+    checks:
+      - "Performing Test HAS_AVX512_1"
+    directories:
+      source: "C:/Users/gedim/Documents/Unreal Projects/Example/Source/Example/llama.cpp/build/CMakeFiles/CMakeScratch/TryCompile-bnnfs2"
+      binary: "C:/Users/gedim/Documents/Unreal Projects/Example/Source/Example/llama.cpp/build/CMakeFiles/CMakeScratch/TryCompile-bnnfs2"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS /W3"
+      CMAKE_C_FLAGS_DEBUG: "/MDd /Zi /Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      CMAKE_MODULE_PATH: "C:/Users/gedim/Documents/Unreal Projects/Example/Source/Example/llama.cpp/cmake/"
+      CMAKE_MSVC_RUNTIME_LIBRARY: "MultiThreadedDLL"
+    buildResult:
+      variable: "HAS_AVX512_1_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/gedim/Documents/Unreal Projects/Example/Source/Example/llama.cpp/build/CMakeFiles/CMakeScratch/TryCompile-bnnfs2'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_fc3db.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        MSBuild-Version 17.14.18+a338add32 f├╝r .NET Framework
+        Der Buildvorgang wurde am 19.08.2025 06:15:50 gestartet.
+        
+        Projekt "C:\\Users\\gedim\\Documents\\Unreal Projects\\Example\\Source\\Example\\llama.cpp\\build\\CMakeFiles\\CMakeScratch\\TryCompile-bnnfs2\\cmTC_fc3db.vcxproj" auf Knoten "1" (Standardziele).
+        PrepareForBuild:
+          Das Verzeichnis "cmTC_fc3db.dir\\Debug\\" wird erstellt.
+          Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
+          Das Verzeichnis "C:\\Users\\gedim\\Documents\\Unreal Projects\\Example\\Source\\Example\\llama.cpp\\build\\CMakeFiles\\CMakeScratch\\TryCompile-bnnfs2\\Debug\\" wird erstellt.
+          Das Verzeichnis "cmTC_fc3db.dir\\Debug\\cmTC_fc3db.tlog\\" wird erstellt.
+        InitializeBuildStatus:
+          "cmTC_fc3db.dir\\Debug\\cmTC_fc3db.tlog\\unsuccessfulbuild" wird erstellt, da "AlwaysCreate" angegeben wurde.
+          Aktualisieren des Timestamps von "cmTC_fc3db.dir\\Debug\\cmTC_fc3db.tlog\\unsuccessfulbuild".
+        ClCompile:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\HostX64\\x64\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D HAS_AVX512_1 /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /std:c11 /Fo"cmTC_fc3db.dir\\Debug\\\\" /Fd"cmTC_fc3db.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Users\\gedim\\Documents\\Unreal Projects\\Example\\Source\\Example\\llama.cpp\\build\\CMakeFiles\\CMakeScratch\\TryCompile-bnnfs2\\src.c"
+          Microsoft (R) C/C++ Optimizing Compiler Version 19.38.33145 for x64
+          Copyright (C) Microsoft Corporation.  All rights reserved.
+          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D HAS_AVX512_1 /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /std:c11 /Fo"cmTC_fc3db.dir\\Debug\\\\" /Fd"cmTC_fc3db.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Users\\gedim\\Documents\\Unreal Projects\\Example\\Source\\Example\\llama.cpp\\build\\CMakeFiles\\CMakeScratch\\TryCompile-bnnfs2\\src.c"
+          src.c
+        Link:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\HostX64\\x64\\link.exe /OUT:"C:\\Users\\gedim\\Documents\\Unreal Projects\\Example\\Source\\Example\\llama.cpp\\build\\CMakeFiles\\CMakeScratch\\TryCompile-bnnfs2\\Debug\\cmTC_fc3db.exe" /INCREMENTAL /ILK:"cmTC_fc3db.dir\\Debug\\cmTC_fc3db.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/gedim/Documents/Unreal Projects/Example/Source/Example/llama.cpp/build/CMakeFiles/CMakeScratch/TryCompile-bnnfs2/Debug/cmTC_fc3db.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /IMPLIB:"C:/Users/gedim/Documents/Unreal Projects/Example/Source/Example/llama.cpp/build/CMakeFiles/CMakeScratch/TryCompile-bnnfs2/Debug/cmTC_fc3db.lib" /MACHINE:X64  /machine:x64 cmTC_fc3db.dir\\Debug\\src.obj
+          cmTC_fc3db.vcxproj -> C:\\Users\\gedim\\Documents\\Unreal Projects\\Example\\Source\\Example\\llama.cpp\\build\\CMakeFiles\\CMakeScratch\\TryCompile-bnnfs2\\Debug\\cmTC_fc3db.exe
+        FinalizeBuildStatus:
+          Die Datei "cmTC_fc3db.dir\\Debug\\cmTC_fc3db.tlog\\unsuccessfulbuild" wird gel├Âscht.
+          Aktualisieren des Timestamps von "cmTC_fc3db.dir\\Debug\\cmTC_fc3db.tlog\\cmTC_fc3db.lastbuildstate".
+        Die Erstellung von Projekt "C:\\Users\\gedim\\Documents\\Unreal Projects\\Example\\Source\\Example\\llama.cpp\\build\\CMakeFiles\\CMakeScratch\\TryCompile-bnnfs2\\cmTC_fc3db.vcxproj" ist abgeschlossen (Standardziele).
+        
+        Der Buildvorgang wurde erfolgreich ausgef├╝hrt.
+            0 Warnung(en)
+            0 Fehler
+        
+        Verstrichene Zeit 00:00:01.70
+        
+      exitCode: 0
+    runResult:
+      variable: "HAS_AVX512_1_EXITCODE"
+      cached: true
+      stdout: |
+      stderr: |
+        Illegal instruction
+      exitCode: "FAILED_TO_RUN"
+  -
+    kind: "try_run-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/Internal/CheckSourceRuns.cmake:95 (try_run)"
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CheckCSourceRuns.cmake:88 (cmake_check_source_runs)"
+      - "ggml/src/ggml-cpu/cmake/FindSIMD.cmake:61 (check_c_source_runs)"
+      - "ggml/src/ggml-cpu/cmake/FindSIMD.cmake:95 (check_sse)"
+      - "ggml/src/ggml-cpu/CMakeLists.txt:242 (include)"
+      - "ggml/src/CMakeLists.txt:372 (ggml_add_cpu_backend_variant_impl)"
+    checks:
+      - "Performing Test HAS_AVX512_2"
+    directories:
+      source: "C:/Users/gedim/Documents/Unreal Projects/Example/Source/Example/llama.cpp/build/CMakeFiles/CMakeScratch/TryCompile-zuio33"
+      binary: "C:/Users/gedim/Documents/Unreal Projects/Example/Source/Example/llama.cpp/build/CMakeFiles/CMakeScratch/TryCompile-zuio33"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS /W3"
+      CMAKE_C_FLAGS_DEBUG: "/MDd /Zi /Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      CMAKE_MODULE_PATH: "C:/Users/gedim/Documents/Unreal Projects/Example/Source/Example/llama.cpp/cmake/"
+      CMAKE_MSVC_RUNTIME_LIBRARY: "MultiThreadedDLL"
+    buildResult:
+      variable: "HAS_AVX512_2_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/gedim/Documents/Unreal Projects/Example/Source/Example/llama.cpp/build/CMakeFiles/CMakeScratch/TryCompile-zuio33'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_d8ccc.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        MSBuild-Version 17.14.18+a338add32 f├╝r .NET Framework
+        Der Buildvorgang wurde am 19.08.2025 06:15:53 gestartet.
+        
+        Projekt "C:\\Users\\gedim\\Documents\\Unreal Projects\\Example\\Source\\Example\\llama.cpp\\build\\CMakeFiles\\CMakeScratch\\TryCompile-zuio33\\cmTC_d8ccc.vcxproj" auf Knoten "1" (Standardziele).
+        PrepareForBuild:
+          Das Verzeichnis "cmTC_d8ccc.dir\\Debug\\" wird erstellt.
+          Structured output is enabled. The formatting of compiler diagnostics will reflect the error hierarchy. See https://aka.ms/cpp/structured-output for more details.
+          Das Verzeichnis "C:\\Users\\gedim\\Documents\\Unreal Projects\\Example\\Source\\Example\\llama.cpp\\build\\CMakeFiles\\CMakeScratch\\TryCompile-zuio33\\Debug\\" wird erstellt.
+          Das Verzeichnis "cmTC_d8ccc.dir\\Debug\\cmTC_d8ccc.tlog\\" wird erstellt.
+        InitializeBuildStatus:
+          "cmTC_d8ccc.dir\\Debug\\cmTC_d8ccc.tlog\\unsuccessfulbuild" wird erstellt, da "AlwaysCreate" angegeben wurde.
+          Aktualisieren des Timestamps von "cmTC_d8ccc.dir\\Debug\\cmTC_d8ccc.tlog\\unsuccessfulbuild".
+        ClCompile:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\HostX64\\x64\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D HAS_AVX512_2 /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /arch:AVX512 /fp:precise /std:c11 /Fo"cmTC_d8ccc.dir\\Debug\\\\" /Fd"cmTC_d8ccc.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Users\\gedim\\Documents\\Unreal Projects\\Example\\Source\\Example\\llama.cpp\\build\\CMakeFiles\\CMakeScratch\\TryCompile-zuio33\\src.c"
+          Microsoft (R) C/C++ Optimizing Compiler Version 19.38.33145 for x64
+          Copyright (C) Microsoft Corporation.  All rights reserved.
+          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D HAS_AVX512_2 /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /arch:AVX512 /fp:precise /std:c11 /Fo"cmTC_d8ccc.dir\\Debug\\\\" /Fd"cmTC_d8ccc.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Users\\gedim\\Documents\\Unreal Projects\\Example\\Source\\Example\\llama.cpp\\build\\CMakeFiles\\CMakeScratch\\TryCompile-zuio33\\src.c"
+          src.c
+        Link:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\HostX64\\x64\\link.exe /OUT:"C:\\Users\\gedim\\Documents\\Unreal Projects\\Example\\Source\\Example\\llama.cpp\\build\\CMakeFiles\\CMakeScratch\\TryCompile-zuio33\\Debug\\cmTC_d8ccc.exe" /INCREMENTAL /ILK:"cmTC_d8ccc.dir\\Debug\\cmTC_d8ccc.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/gedim/Documents/Unreal Projects/Example/Source/Example/llama.cpp/build/CMakeFiles/CMakeScratch/TryCompile-zuio33/Debug/cmTC_d8ccc.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /IMPLIB:"C:/Users/gedim/Documents/Unreal Projects/Example/Source/Example/llama.cpp/build/CMakeFiles/CMakeScratch/TryCompile-zuio33/Debug/cmTC_d8ccc.lib" /MACHINE:X64  /machine:x64 cmTC_d8ccc.dir\\Debug\\src.obj
+          cmTC_d8ccc.vcxproj -> C:\\Users\\gedim\\Documents\\Unreal Projects\\Example\\Source\\Example\\llama.cpp\\build\\CMakeFiles\\CMakeScratch\\TryCompile-zuio33\\Debug\\cmTC_d8ccc.exe
+        FinalizeBuildStatus:
+          Die Datei "cmTC_d8ccc.dir\\Debug\\cmTC_d8ccc.tlog\\unsuccessfulbuild" wird gel├Âscht.
+          Aktualisieren des Timestamps von "cmTC_d8ccc.dir\\Debug\\cmTC_d8ccc.tlog\\cmTC_d8ccc.lastbuildstate".
+        Die Erstellung von Projekt "C:\\Users\\gedim\\Documents\\Unreal Projects\\Example\\Source\\Example\\llama.cpp\\build\\CMakeFiles\\CMakeScratch\\TryCompile-zuio33\\cmTC_d8ccc.vcxproj" ist abgeschlossen (Standardziele).
+        
+        Der Buildvorgang wurde erfolgreich ausgef├╝hrt.
+            0 Warnung(en)
+            0 Fehler
+        
+        Verstrichene Zeit 00:00:01.80
+        
+      exitCode: 0
+    runResult:
+      variable: "HAS_AVX512_2_EXITCODE"
+      cached: true
+      stdout: |
+      stderr: |
+        Illegal instruction
+      exitCode: "FAILED_TO_RUN"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "ggml/src/CMakeLists.txt:395 (find_library)"
+    mode: "library"
+    variable: "MATH_LIBRARY"
+    description: "Path to a library."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "m"
+    candidate_directories:
+      - "C:/Windows/System32/"
+      - "C:/Windows/"
+      - "C:/Windows/System32/wbem/"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/"
+      - "C:/Windows/System32/OpenSSH/"
+      - "C:/Program Files/nodejs/"
+      - "C:/Users/gedim/PyCharmMiscProject/.venv/Scripts/"
+      - "C:/Program Files/Git/cmd/"
+      - "C:/Program Files/NVIDIA Corporation/NVIDIA App/NvDLISR/"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/"
+      - "C:/Program Files/dotnet/"
+      - "C:/Program Files/CMake/bin/"
+      - "C:/Users/gedim/AppData/Local/Programs/Python/Launcher/"
+      - "C:/Users/gedim/AppData/Local/Microsoft/WindowsApps/"
+      - "C:/Users/gedim/AppData/Local/Programs/Microsoft VS Code/bin/"
+      - "C:/Users/gedim/AppData/Roaming/npm/"
+      - "C:/Users/gedim/.dotnet/tools/"
+      - "C:/Program Files/lib/"
+      - "C:/Program Files/"
+      - "C:/Program Files (x86)/lib/"
+      - "C:/Program Files (x86)/"
+      - "C:/Program Files/CMake/lib/"
+      - "C:/Program Files/CMake/"
+      - "C:/Program Files (x86)/llama.cpp/lib/"
+      - "C:/Program Files (x86)/llama.cpp/"
+      - "C:/Program Files (x86)/llama.cpp/bin/"
+      - "/bin/"
+    searched_directories:
+      - "C:/Windows/System32/"
+      - "C:/Windows/"
+      - "C:/Windows/System32/wbem/"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/"
+      - "C:/Windows/System32/OpenSSH/"
+      - "C:/Program Files/nodejs/"
+      - "C:/Users/gedim/PyCharmMiscProject/.venv/Scripts/"
+      - "C:/Program Files/Git/cmd/"
+      - "C:/Program Files/NVIDIA Corporation/NVIDIA App/NvDLISR/"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/"
+      - "C:/Program Files/dotnet/"
+      - "C:/Program Files/CMake/bin/"
+      - "C:/Users/gedim/AppData/Local/Programs/Python/Launcher/"
+      - "C:/Users/gedim/AppData/Local/Microsoft/WindowsApps/"
+      - "C:/Users/gedim/AppData/Local/Programs/Microsoft VS Code/bin/"
+      - "C:/Users/gedim/AppData/Roaming/npm/"
+      - "C:/Users/gedim/.dotnet/tools/"
+      - "C:/Program Files/lib/"
+      - "C:/Program Files/"
+      - "C:/Program Files (x86)/lib/"
+      - "C:/Program Files (x86)/"
+      - "C:/Program Files/CMake/lib/"
+      - "C:/Program Files/CMake/"
+      - "C:/Program Files (x86)/llama.cpp/lib/"
+      - "C:/Program Files (x86)/llama.cpp/"
+      - "C:/Program Files (x86)/llama.cpp/bin/"
+      - "/bin/"
+    found: false
+    search_context:
+      ENV{PATH}:
+        - "C:\\WINDOWS\\system32"
+        - "C:\\WINDOWS"
+        - "C:\\WINDOWS\\System32\\Wbem"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\WINDOWS\\System32\\OpenSSH\\"
+        - "C:\\Program Files\\nodejs\\"
+        - "C:\\Users\\gedim\\PyCharmMiscProject\\.venv\\Scripts"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:\\Program Files\\NVIDIA Corporation\\NVIDIA App\\NvDLISR"
+        - "C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
+        - "C:\\Program Files\\dotnet\\"
+        - "C:\\Program Files\\CMake\\bin"
+        - "C:\\Users\\gedim\\AppData\\Local\\Programs\\Python\\Launcher\\"
+        - "C:\\Users\\gedim\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\Users\\gedim\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
+        - "C:\\Users\\gedim\\AppData\\Roaming\\npm"
+        - "C:\\Users\\gedim\\.dotnet\\tools"
+      CMAKE_INSTALL_PREFIX: "C:/Program Files (x86)/llama.cpp"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "C:/Program Files"
+        - "C:/Program Files (x86)"
+        - "C:/Program Files/CMake"
+        - "C:/Program Files (x86)/llama.cpp"
+      CMAKE_SYSTEM_LIBRARY_PATH:
+        - "C:/Program Files (x86)/llama.cpp/bin"
+        - "C:/Program Files/CMake/bin"
+        - "/bin"
+...
