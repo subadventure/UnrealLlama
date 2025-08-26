@@ -11,12 +11,12 @@
 ULlamaComponent::ULlamaComponent()
 {
 	PrimaryComponentTick.bCanEverTick = true;
-	llama_backend_init();
 }
 
 void ULlamaComponent::BeginPlay()
 {
 	Super::BeginPlay();
+	llama_backend_init();
 
 }
 void ULlamaComponent::EndPlay(EEndPlayReason::Type Reason)

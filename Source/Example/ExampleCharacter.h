@@ -1,6 +1,8 @@
 // Copyright Epic Games, Inc. All Rights Reserved.
 
 #pragma once
+
+#include "BuildingComponent.h"
 #include "Kismet/KismetSystemLibrary.h"
 #include "Kismet/KismetMathLibrary.h"
 #include "Kismet/KismetStringLibrary.h"
@@ -33,6 +35,10 @@ class AExampleCharacter : public ACharacter
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category="Components", meta = (AllowPrivateAccess = "true"))
 	UCameraComponent* FollowCamera;
 
+	/** Follow camera */
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category="Components", meta = (AllowPrivateAccess = "true"))
+	UBuildingComponent* BuildingComponent;
+
 	
 protected:
 
@@ -52,6 +58,14 @@ protected:
 	UPROPERTY(EditAnywhere, Category="Input")
 	UInputAction* MouseLookAction;
 
+	/** Building Input Action */
+	UPROPERTY(EditAnywhere, Category="Input")
+	UInputAction* BuildingRotateAction;
+
+	/** Building Input Action */
+	UPROPERTY(EditAnywhere, Category="Input")
+	UInputAction* BuildingBuildAction;
+
 public:
 
 	/** Constructor */
@@ -70,6 +84,12 @@ protected:
 
 	/** Called for looking input */
 	void Look(const FInputActionValue& Value);
+
+	/** Called for looking input */
+	void Fire(const FInputActionValue& Value);
+
+	/** Called for looking input */
+	void RotateBuilding(const FInputActionValue& Value);
 
 public:
 
@@ -96,5 +116,8 @@ public:
 
 	/** Returns FollowCamera subobject **/
 	FORCEINLINE class UCameraComponent* GetFollowCamera() const { return FollowCamera; }
+
+	/** Returns FollowCamera subobject **/
+	FORCEINLINE class UBuildingComponent* GetBuildingComponent() const { return BuildingComponent; }
 };
 

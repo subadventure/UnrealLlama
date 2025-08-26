@@ -11,6 +11,7 @@
 #include "EnhancedInputSubsystems.h"
 #include "InputActionValue.h"
 #include "Example.h"
+#include "Engine/StaticMeshActor.h"
 
 AExampleCharacter::AExampleCharacter()
 {
@@ -46,6 +47,9 @@ AExampleCharacter::AExampleCharacter()
 	FollowCamera->SetupAttachment(CameraBoom, USpringArmComponent::SocketName);
 	FollowCamera->bUsePawnControlRotation = false;
 
+	// Create a follow camera
+	BuildingComponent = CreateDefaultSubobject<UBuildingComponent>(TEXT("BuildingComponent"));
+
 	// Note: The skeletal mesh and anim blueprint references on the Mesh component (inherited from Character) 
 	// are set in the derived blueprint asset named ThirdPersonCharacter (to avoid direct content references in C++)
 }
@@ -65,6 +69,10 @@ void AExampleCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputCo
 
 		// Looking
 		EnhancedInputComponent->BindAction(LookAction, ETriggerEvent::Triggered, this, &AExampleCharacter::Look);
+
+		// Building
+		EnhancedInputComponent->BindAction(BuildingRotateAction, ETriggerEvent::Started, this, &AExampleCharacter::RotateBuilding);
+		EnhancedInputComponent->BindAction(BuildingBuildAction, ETriggerEvent::Started, this, &AExampleCharacter::Fire);
 	}
 	else
 	{
@@ -80,7 +88,6 @@ void AExampleCharacter::Move(const FInputActionValue& Value)
 	// route the input
 	DoMove(MovementVector.X, MovementVector.Y);
 }
-
 void AExampleCharacter::Look(const FInputActionValue& Value)
 {
 	// input is a Vector2D
@@ -88,6 +95,18 @@ void AExampleCharacter::Look(const FInputActionValue& Value)
 
 	// route the input
 	DoLook(LookAxisVector.X, LookAxisVector.Y);
+}
+void AExampleCharacter::Fire(const FInputActionValue& Value)
+{
+	const FVector Location = BuildingComponent->GetComponentLocation();
+	AStaticMeshActor* Actor = GetWorld()->SpawnActor<AStaticMeshActor>(AStaticMeshActor::StaticClass(), BuildingComponent->GetComponentTransform());
+	Actor->GetStaticMeshComponent()->Mobility = EComponentMobility::Movable;
+	Actor->GetStaticMeshComponent()->SetStaticMesh(BuildingComponent->GetStaticMesh());
+	Actor->GetStaticMeshComponent()->Mobility = EComponentMobility::Static;
+}
+void AExampleCharacter::RotateBuilding(const FInputActionValue& Value)
+{
+	BuildingComponent->AddLocalRotation(FRotator(0, 90, 0));
 }
 
 void AExampleCharacter::DoMove(float Right, float Forward)
@@ -109,7 +128,6 @@ void AExampleCharacter::DoMove(float Right, float Forward)
 		AddMovementInput(RightDirection, Right);
 	}
 }
-
 void AExampleCharacter::DoLook(float Yaw, float Pitch)
 {
 	if (GetController() != nullptr)
@@ -119,13 +137,11 @@ void AExampleCharacter::DoLook(float Yaw, float Pitch)
 		AddControllerPitchInput(Pitch);
 	}
 }
-
 void AExampleCharacter::DoJumpStart()
 {
 	// signal the character to jump
 	Jump();
 }
-
 void AExampleCharacter::DoJumpEnd()
 {
 	// signal the character to stop jumping
