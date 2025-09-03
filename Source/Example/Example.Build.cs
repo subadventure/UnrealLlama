@@ -20,7 +20,9 @@ public class Example : ModuleRules
 			"GameplayStateTreeModule",
 			"UMG",
 			"Slate",
-			"HTTP"
+			"HTTP",
+			"Landscape",
+			"Foliage",
 		});
 
 		PrivateDependencyModuleNames.AddRange(new string[] { });
