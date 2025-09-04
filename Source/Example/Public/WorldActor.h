@@ -40,6 +40,7 @@ private:
 	
 	const FIntPoint GetLandscapeVertexCounts(ALandscape* LandscapeActor);
 	const FIntRect GetLandscapeRect(const FVector& InWorldLocation, ALandscape* Landscape);
+	AActor* GenerateBackgroundLandscape(const int64 InHalfSize, const uint32 InScale, const uint32 InMaxHeight, const int32 InMinHeight);
 
 
 };

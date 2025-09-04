@@ -23,6 +23,8 @@ public class Example : ModuleRules
 			"HTTP",
 			"Landscape",
 			"Foliage",
+			"MeshDescription",
+			"StaticMeshDescription",
 		});
 
 		PrivateDependencyModuleNames.AddRange(new string[] { });

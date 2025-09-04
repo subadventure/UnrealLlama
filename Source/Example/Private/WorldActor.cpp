@@ -1,4 +1,4 @@
-// Fill out your copyright notice in the Description page of Project Settings.
+ï»¿// Fill out your copyright notice in the Description page of Project Settings.
 
 
 #include "WorldActor.h"
@@ -73,10 +73,10 @@ void AWorldActor::ManipulateHeights(const FVector InLocation, const float InDelt
 
         LandscapeEdit.GetHeightDataFast(Rect.Min.X, Rect.Min.Y, Rect.Max.X, Rect.Max.Y, Heights.GetData(), 0);
 
-        // Höhe ändern
+        // HÃ¶he Ã¤ndern
         Heights[0] = FMath::Clamp<uint16>(Heights[0] + InDelta, 0, 65535);
 
-        // Zurückschreiben
+        // ZurÃ¼ckschreiben
         LandscapeEdit.SetHeightData(Rect.Min.X, Rect.Min.Y, Rect.Max.X, Rect.Max.Y, Heights.GetData(), 0, true);
 
 
@@ -104,6 +104,85 @@ void AWorldActor::Tick(float DeltaTime)
 
 }
 
+AActor* AWorldActor::GenerateBackgroundLandscape(const int64 InHalfSize, const uint32 InScale, const uint32 InMaxHeight, const int32 InMinHeight)
+{
+    UWorld* World = GetWorld();
+    if (!World) return nullptr;
+
+    // Landscape finden
+    ALandscape* Landscape = Cast<ALandscape>(
+        UGameplayStatics::GetActorOfClass(World, ALandscape::StaticClass()));
+    if (!Landscape) return nullptr;
+
+    ULandscapeInfo* Info = Landscape->GetLandscapeInfo();
+    if (!Info) return nullptr;
+
+    FLandscapeEditDataInterface LandscapeEdit(Info);
+
+    // MeshDescription vorbereiten
+    FMeshDescription MeshDesc;
+    FStaticMeshAttributes Attributes(MeshDesc);
+    Attributes.Register();
+
+    TMap<FIntPoint, FVertexID> VertexMap;
+
+    const int32 NumVertsX = (InHalfSize * 2) / InScale + 1;
+    const int32 NumVertsY = (InHalfSize * 2) / InScale + 1;
+
+    for (int32 y = 0; y < NumVertsY; y++)
+    {
+        for (int32 x = 0; x < NumVertsX; x++)
+        {
+            const float WorldX = -InHalfSize + x * InScale;
+            const float WorldY = -InHalfSize + y * InScale;
+
+            // HÃ¶he aus Landscape
+            TArray<uint16> Heights;
+            Heights.SetNumUninitialized(1);
+
+            LandscapeEdit.GetHeightDataFast(WorldX, WorldY, WorldX, WorldY, Heights.GetData(),0);
+
+            //float HeightNorm = (float)Heights / 65535.0f;
+            //float WorldZ = FMath::Lerp((float)InMinHeight, (float)InMaxHeight, HeightNorm);
+
+            // Vertex einfÃ¼gen
+            FVertexID VId = MeshDesc.CreateVertex();
+            //Attributes.GetVertexPositions()[VId] = FVector(WorldX, WorldY, WorldZ);
+
+            VertexMap.Add(FIntPoint(x, y), VId);
+        }
+    }
+
+    // Triangles erzeugen
+    for (int32 y = 0; y < NumVertsY - 1; y++)
+    {
+        for (int32 x = 0; x < NumVertsX - 1; x++)
+        {
+            const FVertexID V0 = VertexMap[FIntPoint(x, y)];
+            const FVertexID V1 = VertexMap[FIntPoint(x + 1, y)];
+            const FVertexID V2 = VertexMap[FIntPoint(x, y + 1)];
+            const FVertexID V3 = VertexMap[FIntPoint(x + 1, y + 1)];
+
+            // Quad â†’ zwei Triangles
+           ///// MeshDesc.CreateTriangle({ V0, V2, V1 });
+            //MeshDesc.CreateTriangle({ V2, V3, V1 });
+        }
+    }
+
+    // StaticMesh erstellen
+    UStaticMesh* StaticMesh = NewObject<UStaticMesh>(World, UStaticMesh::StaticClass());
+   /// StaticMesh->BuildFromMeshDescription(MeshDesc);
+
+    // Actor erzeugen
+    AActor* MeshActor = World->SpawnActor<AActor>();
+    UStaticMeshComponent* MeshComp = NewObject<UStaticMeshComponent>(MeshActor);
+    MeshComp->SetStaticMesh(StaticMesh);
+    MeshComp->RegisterComponent();
+    MeshActor->SetRootComponent(MeshComp);
+
+    return MeshActor;
+}
+
 // -------------------------------------- HELPER FUNCTIONS -------------------------------------------------- //
 const FIntPoint AWorldActor::GetLandscapeVertexCounts(ALandscape* LandscapeActor)
 {
@@ -120,7 +199,7 @@ const FIntPoint AWorldActor::GetLandscapeVertexCounts(ALandscape* LandscapeActor
 
     const ULandscapeComponent* FirstComp = LandscapeActor->LandscapeComponents[0];
 
-    // Größe einer einzelnen Komponente in Quads
+    // GrÃ¶ÃŸe einer einzelnen Komponente in Quads
     const int32 ComponentSizeQuads = FirstComp->ComponentSizeQuads;
     const int32 NumSubsections = FirstComp->NumSubsections;
     const int32 SubsectionSize = FirstComp->SubsectionSizeQuads;
@@ -160,15 +239,15 @@ const FIntRect AWorldActor::GetLandscapeRect(const FVector& InWorldLocation, ALa
     if (!LandscapeInfo) return Result;
 
     // 2. World-Position in Landscape-Koordinaten umrechnen
-    // Landscape->GetTransform() enthält Scale / Translation
+    // Landscape->GetTransform() enthÃ¤lt Scale / Translation
     const FVector LocalPos = Landscape->GetTransform().InverseTransformPosition(InWorldLocation);
 
     // 3. X/Y Vertex-Koordinaten berechnen
     int32 VertexX = FMath::RoundToInt(LocalPos.X / Landscape->GetActorScale().X);
     int32 VertexY = FMath::RoundToInt(LocalPos.Y / Landscape->GetActorScale().Y);
 
-    // 4. Landscape-Vertex-Range ermitteln (optional: einschränken auf gültige Vertices)
-    const FIntPoint VertexCounts = GetLandscapeVertexCounts(Landscape); // deine Funktion von früher
+    // 4. Landscape-Vertex-Range ermitteln (optional: einschrÃ¤nken auf gÃ¼ltige Vertices)
+    const FIntPoint VertexCounts = GetLandscapeVertexCounts(Landscape); // deine Funktion von frÃ¼her
     VertexX = FMath::Clamp(VertexX, 0, VertexCounts.X - 1);
     VertexY = FMath::Clamp(VertexY, 0, VertexCounts.Y - 1);
 
