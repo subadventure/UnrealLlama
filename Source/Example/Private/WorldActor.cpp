@@ -32,7 +32,7 @@ void AWorldActor::GenerateTerrain()
         const FIntPoint LandscapeVerts = GetLandscapeVertexCounts(Landscape);
         UE_LOG(LogTemp, Log, TEXT("LandscapeVerts:%s" ), *(LandscapeVerts.ToString()));
 
-        UTextureRenderTarget2D* RT = UKismetRenderingLibrary::CreateRenderTarget2D(GetWorld(), LandscapeVerts.X+1, LandscapeVerts.Y+1);
+        UTextureRenderTarget2D* RT = UKismetRenderingLibrary::CreateRenderTarget2D(GetWorld(), LandscapeVerts.X + 1, LandscapeVerts.Y + 1);
 
         UKismetRenderingLibrary::DrawMaterialToRenderTarget(GetWorld(), RT, Heightmap);
 
@@ -43,10 +43,10 @@ void AWorldActor::GenerateTerrain()
         for (FLinearColor Color : OutColor) {
 
             // Hier Conversion von Color.R in InHeights
-            InHeights.Add(uint16(Color.R * 65534.0f));
+            InHeights.Add(uint16(Color.R * 65534.0f - 65534.0f));
         }
 
-        LandscapeEdit.SetHeightData(0, 0, LandscapeVerts.X, LandscapeVerts.Y, InHeights.GetData(), 0, true);
+        LandscapeEdit.SetHeightData(0, 0, LandscapeVerts.X, LandscapeVerts.Y, InHeights.GetData(), 0, true,nullptr,nullptr,nullptr,true);
 
 	}
 	else {
