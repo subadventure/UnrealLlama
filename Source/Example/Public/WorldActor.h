@@ -16,11 +16,8 @@ public:
 	// Sets default values for this actor's properties
 	AWorldActor();
 	
-	UPROPERTY(EditAnywhere, Category=World)
-	UMaterialInterface* Heightmap;
-
-	UFUNCTION(CallInEditor, BlueprintCallable, Category=World)
-	void GenerateTerrain();
+	UFUNCTION(BlueprintCallable, Category=World)
+	void GenerateTerrain(UMaterialInterface* InMaterial);
 
 	UFUNCTION(CallInEditor, BlueprintCallable, Category=World)
 	void ManipulateHeights(const FVector InLocation, const float InDelta);

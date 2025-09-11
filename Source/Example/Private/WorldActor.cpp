@@ -16,25 +16,25 @@ AWorldActor::AWorldActor()
 
 }
 
-void AWorldActor::GenerateTerrain()
+void AWorldActor::GenerateTerrain(UMaterialInterface* InMaterial)
 {
-	if (!Heightmap) {
-		UE_LOG(LogTemp, Error, TEXT("Keine Heightmap gefunden"));
-		return;
-	}
+    if (!InMaterial) {
+        UE_LOG(LogTemp, Error, TEXT("kein Material gefunden"));
+        return;
+    }
 
-	AActor* Actor = UGameplayStatics::GetActorOfClass(GetWorld(), ALandscape::StaticClass());
+    AActor* Actor = UGameplayStatics::GetActorOfClass(GetWorld(), ALandscape::StaticClass());
 
-	if (ALandscape* Landscape = Cast<ALandscape>(Actor)) {
+    if (ALandscape* Landscape = Cast<ALandscape>(Actor)) {
 
-		FLandscapeEditDataInterface LandscapeEdit(Landscape->GetLandscapeInfo());
+        FLandscapeEditDataInterface LandscapeEdit(Landscape->GetLandscapeInfo());
 
         const FIntPoint LandscapeVerts = GetLandscapeVertexCounts(Landscape);
-        UE_LOG(LogTemp, Log, TEXT("LandscapeVerts:%s" ), *(LandscapeVerts.ToString()));
+        UE_LOG(LogTemp, Log, TEXT("LandscapeVerts:%s"), *(LandscapeVerts.ToString()));
 
-        UTextureRenderTarget2D* RT = UKismetRenderingLibrary::CreateRenderTarget2D(GetWorld(), LandscapeVerts.X + 1, LandscapeVerts.Y + 1);
+        UTextureRenderTarget2D* RT = UKismetRenderingLibrary::CreateRenderTarget2D(GetWorld(), LandscapeVerts.X + 1, LandscapeVerts.Y + 1, RTF_RGBA32f);
 
-        UKismetRenderingLibrary::DrawMaterialToRenderTarget(GetWorld(), RT, Heightmap);
+        UKismetRenderingLibrary::DrawMaterialToRenderTarget(GetWorld(), RT, InMaterial);
 
         TArray<FLinearColor> OutColor;  TArray<uint16> InHeights;
 
@@ -43,17 +43,16 @@ void AWorldActor::GenerateTerrain()
         for (FLinearColor Color : OutColor) {
 
             // Hier Conversion von Color.R in InHeights
-            InHeights.Add(uint16(Color.R * 65534.0f - 65534.0f));
+            InHeights.Add(uint16(Color.R * 65534.0f));
         }
 
-        LandscapeEdit.SetHeightData(0, 0, LandscapeVerts.X, LandscapeVerts.Y, InHeights.GetData(), 0, true,nullptr,nullptr,nullptr,true);
+        LandscapeEdit.SetHeightData(0, 0, LandscapeVerts.X, LandscapeVerts.Y, InHeights.GetData(), 0, true,nullptr, nullptr, nullptr,true);
 
-	}
-	else {
-		UE_LOG(LogTemp, Error, TEXT("Keine Landsacpe gefunden"));
+    }
+    else {
+        UE_LOG(LogTemp, Error, TEXT("Keine Landsacpe gefunden"));
 
-	}
-
+    }
 }
 
 void AWorldActor::ManipulateHeights(const FVector InLocation, const float InDelta)
